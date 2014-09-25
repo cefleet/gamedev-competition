@@ -10,12 +10,17 @@ Game.prototype = {
 		this.Level = 'Level1';
 		game.adv.activeLevel = new Teddy.Levels[this.Level]();
 		game.adv.activeLevel.load();		
+		game.time.advancedTiming = true;
 	
 	},
 	
 	
-	update : function(){
-			
-	
+	update : function(){			
+		 //  this.world.sort('y', Phaser.Group.SORT_ASCENDING);
+
+	},
+	render : function(){
+		game.debug.text('FPS : '+game.time.fps, 10,10);
+		//game.debug.body(game.adv.player);
 	}
 }

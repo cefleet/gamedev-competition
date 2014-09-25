@@ -1,0 +1,1673 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   width="40"
+   height="200"
+   id="svg4834"
+   version="1.1"
+   inkscape:version="0.48.4 r9939"
+   inkscape:export-filename="/home/cefleet/Development/games/Teddy/src/assets/screwdriver.png"
+   inkscape:export-xdpi="22.5"
+   inkscape:export-ydpi="22.5"
+   sodipodi:docname="rockpile.svg">
+  <defs
+     id="defs4836">
+    <inkscape:path-effect
+       effect="skeletal"
+       id="path-effect3886-2"
+       is_visible="true"
+       pattern="m 7.8042673,3.9588087 0,10.0000003 9.9999997,-5.0000003 z"
+       copytype="single_stretched"
+       prop_scale="1"
+       scale_y_rel="false"
+       spacing="0"
+       normal_offset="0"
+       tang_offset="0"
+       prop_units="false"
+       vertical_pattern="false"
+       fuse_tolerance="0" />
+    <inkscape:path-effect
+       effect="skeletal"
+       id="path-effect3882-1"
+       is_visible="true"
+       pattern="m 7.8042673,3.9588087 0,10.0000003 9.9999997,-5.0000003 z"
+       copytype="single_stretched"
+       prop_scale="1"
+       scale_y_rel="false"
+       spacing="0"
+       normal_offset="0"
+       tang_offset="0"
+       prop_units="false"
+       vertical_pattern="false"
+       fuse_tolerance="0" />
+    <inkscape:path-effect
+       effect="skeletal"
+       id="path-effect3878-8"
+       is_visible="true"
+       pattern="m 7.8042673,3.9588087 0,10.0000003 9.9999997,-5.0000003 z"
+       copytype="single_stretched"
+       prop_scale="1"
+       scale_y_rel="false"
+       spacing="0"
+       normal_offset="0"
+       tang_offset="0"
+       prop_units="false"
+       vertical_pattern="false"
+       fuse_tolerance="0" />
+    <inkscape:path-effect
+       effect="skeletal"
+       id="path-effect3874-9"
+       is_visible="true"
+       pattern="m 7.8042673,3.9588087 0,10.0000003 9.9999997,-5.0000003 z"
+       copytype="single_stretched"
+       prop_scale="1"
+       scale_y_rel="false"
+       spacing="0"
+       normal_offset="0"
+       tang_offset="0"
+       prop_units="false"
+       vertical_pattern="false"
+       fuse_tolerance="0" />
+    <inkscape:path-effect
+       effect="skeletal"
+       id="path-effect3870-1"
+       is_visible="true"
+       pattern="m 7.8042673,3.9588087 0,10.0000003 9.9999997,-5.0000003 z"
+       copytype="single_stretched"
+       prop_scale="1"
+       scale_y_rel="false"
+       spacing="0"
+       normal_offset="0"
+       tang_offset="0"
+       prop_units="false"
+       vertical_pattern="false"
+       fuse_tolerance="0" />
+    <inkscape:path-effect
+       effect="skeletal"
+       id="path-effect3866-2"
+       is_visible="true"
+       pattern="m 7.8042673,3.9588087 0,10.0000003 9.9999997,-5.0000003 z"
+       copytype="single_stretched"
+       prop_scale="1"
+       scale_y_rel="false"
+       spacing="0"
+       normal_offset="0"
+       tang_offset="0"
+       prop_units="false"
+       vertical_pattern="false"
+       fuse_tolerance="0" />
+    <inkscape:path-effect
+       effect="skeletal"
+       id="path-effect3862-8"
+       is_visible="true"
+       pattern="m 7.8042673,3.9588087 0,10.0000003 9.9999997,-5.0000003 z"
+       copytype="single_stretched"
+       prop_scale="1"
+       scale_y_rel="false"
+       spacing="0"
+       normal_offset="0"
+       tang_offset="0"
+       prop_units="false"
+       vertical_pattern="false"
+       fuse_tolerance="0" />
+    <inkscape:path-effect
+       effect="skeletal"
+       id="path-effect3886"
+       is_visible="true"
+       pattern="m 620.58295,-1430.7821 0,10 10,-5 z"
+       copytype="single_stretched"
+       prop_scale="1"
+       scale_y_rel="false"
+       spacing="0"
+       normal_offset="0"
+       tang_offset="0"
+       prop_units="false"
+       vertical_pattern="false"
+       fuse_tolerance="0" />
+    <inkscape:path-effect
+       effect="skeletal"
+       id="path-effect3882"
+       is_visible="true"
+       pattern="m 620.58295,-1430.7821 0,10 10,-5 z"
+       copytype="single_stretched"
+       prop_scale="1"
+       scale_y_rel="false"
+       spacing="0"
+       normal_offset="0"
+       tang_offset="0"
+       prop_units="false"
+       vertical_pattern="false"
+       fuse_tolerance="0" />
+    <inkscape:path-effect
+       effect="skeletal"
+       id="path-effect3878"
+       is_visible="true"
+       pattern="m 620.58295,-1430.7821 0,10 10,-5 z"
+       copytype="single_stretched"
+       prop_scale="1"
+       scale_y_rel="false"
+       spacing="0"
+       normal_offset="0"
+       tang_offset="0"
+       prop_units="false"
+       vertical_pattern="false"
+       fuse_tolerance="0" />
+    <inkscape:path-effect
+       effect="skeletal"
+       id="path-effect3874"
+       is_visible="true"
+       pattern="m 326.62856,-1263.0968 0,10 10,-5 z"
+       copytype="single_stretched"
+       prop_scale="1"
+       scale_y_rel="false"
+       spacing="0"
+       normal_offset="0"
+       tang_offset="0"
+       prop_units="false"
+       vertical_pattern="false"
+       fuse_tolerance="0" />
+    <inkscape:path-effect
+       effect="skeletal"
+       id="path-effect3870"
+       is_visible="true"
+       pattern="m 620.58295,-1430.7821 0,10 10,-5 z"
+       copytype="single_stretched"
+       prop_scale="1"
+       scale_y_rel="false"
+       spacing="0"
+       normal_offset="0"
+       tang_offset="0"
+       prop_units="false"
+       vertical_pattern="false"
+       fuse_tolerance="0" />
+    <inkscape:path-effect
+       effect="skeletal"
+       id="path-effect3866"
+       is_visible="true"
+       pattern="m 620.58295,-1430.7821 0,10 10,-5 z"
+       copytype="single_stretched"
+       prop_scale="1"
+       scale_y_rel="false"
+       spacing="0"
+       normal_offset="0"
+       tang_offset="0"
+       prop_units="false"
+       vertical_pattern="false"
+       fuse_tolerance="0" />
+    <inkscape:path-effect
+       effect="skeletal"
+       id="path-effect3862"
+       is_visible="true"
+       pattern="m 620.58295,-1430.7821 0,10 10,-5 z"
+       copytype="single_stretched"
+       prop_scale="1"
+       scale_y_rel="false"
+       spacing="0"
+       normal_offset="0"
+       tang_offset="0"
+       prop_units="false"
+       vertical_pattern="false"
+       fuse_tolerance="0" />
+    <inkscape:path-effect
+       effect="skeletal"
+       id="path-effect3886-2-9"
+       is_visible="true"
+       pattern="m 7.8042673,3.9588087 0,10.0000003 9.9999997,-5.0000003 z"
+       copytype="single_stretched"
+       prop_scale="1"
+       scale_y_rel="false"
+       spacing="0"
+       normal_offset="0"
+       tang_offset="0"
+       prop_units="false"
+       vertical_pattern="false"
+       fuse_tolerance="0" />
+    <inkscape:path-effect
+       effect="skeletal"
+       id="path-effect3882-1-1"
+       is_visible="true"
+       pattern="m 7.8042673,3.9588087 0,10.0000003 9.9999997,-5.0000003 z"
+       copytype="single_stretched"
+       prop_scale="1"
+       scale_y_rel="false"
+       spacing="0"
+       normal_offset="0"
+       tang_offset="0"
+       prop_units="false"
+       vertical_pattern="false"
+       fuse_tolerance="0" />
+    <inkscape:path-effect
+       effect="skeletal"
+       id="path-effect3878-8-9"
+       is_visible="true"
+       pattern="m 7.8042673,3.9588087 0,10.0000003 9.9999997,-5.0000003 z"
+       copytype="single_stretched"
+       prop_scale="1"
+       scale_y_rel="false"
+       spacing="0"
+       normal_offset="0"
+       tang_offset="0"
+       prop_units="false"
+       vertical_pattern="false"
+       fuse_tolerance="0" />
+    <inkscape:path-effect
+       effect="skeletal"
+       id="path-effect3874-9-5"
+       is_visible="true"
+       pattern="m 7.8042673,3.9588087 0,10.0000003 9.9999997,-5.0000003 z"
+       copytype="single_stretched"
+       prop_scale="1"
+       scale_y_rel="false"
+       spacing="0"
+       normal_offset="0"
+       tang_offset="0"
+       prop_units="false"
+       vertical_pattern="false"
+       fuse_tolerance="0" />
+    <inkscape:path-effect
+       effect="skeletal"
+       id="path-effect3870-1-2"
+       is_visible="true"
+       pattern="m 7.8042673,3.9588087 0,10.0000003 9.9999997,-5.0000003 z"
+       copytype="single_stretched"
+       prop_scale="1"
+       scale_y_rel="false"
+       spacing="0"
+       normal_offset="0"
+       tang_offset="0"
+       prop_units="false"
+       vertical_pattern="false"
+       fuse_tolerance="0" />
+    <inkscape:path-effect
+       effect="skeletal"
+       id="path-effect3866-2-6"
+       is_visible="true"
+       pattern="m 7.8042673,3.9588087 0,10.0000003 9.9999997,-5.0000003 z"
+       copytype="single_stretched"
+       prop_scale="1"
+       scale_y_rel="false"
+       spacing="0"
+       normal_offset="0"
+       tang_offset="0"
+       prop_units="false"
+       vertical_pattern="false"
+       fuse_tolerance="0" />
+    <inkscape:path-effect
+       effect="skeletal"
+       id="path-effect3862-8-9"
+       is_visible="true"
+       pattern="m 7.8042673,3.9588087 0,10.0000003 9.9999997,-5.0000003 z"
+       copytype="single_stretched"
+       prop_scale="1"
+       scale_y_rel="false"
+       spacing="0"
+       normal_offset="0"
+       tang_offset="0"
+       prop_units="false"
+       vertical_pattern="false"
+       fuse_tolerance="0" />
+    <inkscape:path-effect
+       effect="skeletal"
+       id="path-effect3886-4"
+       is_visible="true"
+       pattern="m 398.64675,-1939.2958 0,10 10,-5 z"
+       copytype="single_stretched"
+       prop_scale="1"
+       scale_y_rel="false"
+       spacing="0"
+       normal_offset="0"
+       tang_offset="0"
+       prop_units="false"
+       vertical_pattern="false"
+       fuse_tolerance="0" />
+    <inkscape:path-effect
+       effect="skeletal"
+       id="path-effect3882-6"
+       is_visible="true"
+       pattern="m 398.64675,-1939.2958 0,10 10,-5 z"
+       copytype="single_stretched"
+       prop_scale="1"
+       scale_y_rel="false"
+       spacing="0"
+       normal_offset="0"
+       tang_offset="0"
+       prop_units="false"
+       vertical_pattern="false"
+       fuse_tolerance="0" />
+    <inkscape:path-effect
+       effect="skeletal"
+       id="path-effect3878-2"
+       is_visible="true"
+       pattern="m 398.64675,-1939.2958 0,10 10,-5 z"
+       copytype="single_stretched"
+       prop_scale="1"
+       scale_y_rel="false"
+       spacing="0"
+       normal_offset="0"
+       tang_offset="0"
+       prop_units="false"
+       vertical_pattern="false"
+       fuse_tolerance="0" />
+    <inkscape:path-effect
+       effect="skeletal"
+       id="path-effect3874-6"
+       is_visible="true"
+       pattern="m 398.64675,-1939.2958 0,10 10,-5 z"
+       copytype="single_stretched"
+       prop_scale="1"
+       scale_y_rel="false"
+       spacing="0"
+       normal_offset="0"
+       tang_offset="0"
+       prop_units="false"
+       vertical_pattern="false"
+       fuse_tolerance="0" />
+    <inkscape:path-effect
+       effect="skeletal"
+       id="path-effect3870-12"
+       is_visible="true"
+       pattern="m 398.64675,-1939.2958 0,10 10,-5 z"
+       copytype="single_stretched"
+       prop_scale="1"
+       scale_y_rel="false"
+       spacing="0"
+       normal_offset="0"
+       tang_offset="0"
+       prop_units="false"
+       vertical_pattern="false"
+       fuse_tolerance="0" />
+    <inkscape:path-effect
+       effect="skeletal"
+       id="path-effect3866-20"
+       is_visible="true"
+       pattern="m 398.64675,-1939.2958 0,10 10,-5 z"
+       copytype="single_stretched"
+       prop_scale="1"
+       scale_y_rel="false"
+       spacing="0"
+       normal_offset="0"
+       tang_offset="0"
+       prop_units="false"
+       vertical_pattern="false"
+       fuse_tolerance="0" />
+    <inkscape:path-effect
+       effect="skeletal"
+       id="path-effect3862-3"
+       is_visible="true"
+       pattern="m 398.64675,-1939.2958 0,10 10,-5 z"
+       copytype="single_stretched"
+       prop_scale="1"
+       scale_y_rel="false"
+       spacing="0"
+       normal_offset="0"
+       tang_offset="0"
+       prop_units="false"
+       vertical_pattern="false"
+       fuse_tolerance="0" />
+  </defs>
+  <sodipodi:namedview
+     id="base"
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1.0"
+     inkscape:pageopacity="0.0"
+     inkscape:pageshadow="2"
+     inkscape:zoom="1.4"
+     inkscape:cx="263.10401"
+     inkscape:cy="67.031507"
+     inkscape:document-units="px"
+     inkscape:current-layer="layer1"
+     showgrid="false"
+     inkscape:window-width="1440"
+     inkscape:window-height="876"
+     inkscape:window-x="1440"
+     inkscape:window-y="24"
+     inkscape:window-maximized="1"
+     showguides="true"
+     inkscape:guide-bbox="true" />
+  <metadata
+     id="metadata4839">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+        <dc:title></dc:title>
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
+  <g
+     inkscape:label="Layer 1"
+     inkscape:groupmode="layer"
+     id="layer1"
+     transform="translate(0,-852.36217)">
+    <rect
+       style="fill:#995300;fill-opacity:1;stroke:none"
+       id="rect6770-4-3"
+       width="106.64124"
+       height="12.626631"
+       x="907.48248"
+       y="-383.48383"
+       transform="matrix(0,1,-1,0,0,0)" />
+    <path
+       style="opacity:0.32510286;fill:#000000;fill-opacity:1;stroke:none"
+       d="m 375.60674,934.17432 c 5.84283,18.17846 8.53953,23.632 7.64063,28.47959 -0.3855,17.27322 -0.42793,34.27382 0.34507,51.79259 0,0 -3.04176,-14.2238 -5.28901,-21.49517 -2.24724,-7.2714 -0.84437,-15.9452 -1.29381,-20.1868 -0.44945,-4.2416 -2.75122,-8.89872 -2.75122,-8.89872 l -2.24725,-12.72492 z"
+       id="path6948"
+       inkscape:connector-curvature="0"
+       sodipodi:nodetypes="cccssccc" />
+    <rect
+       style="fill:#995300;fill-opacity:1;stroke:none"
+       id="rect6770-4-3-7"
+       width="106.64124"
+       height="12.626631"
+       x="907.8396"
+       y="-449.41422"
+       transform="matrix(0,1,-1,0,0,0)" />
+    <path
+       style="opacity:0.32510286;fill:#000000;fill-opacity:1;stroke:none"
+       d="m 441.31052,934.47751 c 5.84283,18.17846 8.53953,23.63199 7.64063,28.47959 -0.38551,17.27323 -0.42793,34.27383 0.34507,51.7926 0,0 -3.04176,-14.2238 -5.28901,-21.49517 -2.24724,-7.2714 -0.84437,-15.9452 -1.29381,-20.1868 -0.44945,-4.24163 -2.75123,-8.89873 -2.75123,-8.89873 l -2.24724,-12.72492 z"
+       id="path6948-2"
+       inkscape:connector-curvature="0"
+       sodipodi:nodetypes="cccssccc" />
+    <g
+       id="g6116"
+       transform="matrix(14.462672,0,0,14.462672,-2824.5652,-9851.833)"
+       inkscape:export-filename="/home/cefleet/Development/games/Teddy/src/assets/branch.png"
+       inkscape:export-xdpi="81.552719"
+       inkscape:export-ydpi="81.552719">
+      <path
+         sodipodi:nodetypes="cccccccccccccsccsccccccccccsccsccccccccccc"
+         inkscape:connector-curvature="0"
+         id="path3872"
+         d="m -139.3873,639.63041 2.4058,-5.27461 c -2.87764,-0.37159 -5.18465,0.007 -6.86769,0.55489 -2.26419,0.59964 -2.55589,0.59848 -4.46202,1.29268 l -3.36774,0.42169 c -1.94587,0.69592 -3.59652,-0.33805 -5.31926,0.12512 l 0,0 c -1.47933,0.3055 -2.53249,0.66968 -3.10615,0.5129 -0.98849,-0.0237 -2.16529,-0.75333 -3.40233,-1.69608 -1.35246,-1.09462 -2.62161,-2.60801 -4.01867,-4.25174 l 0,-10e-6 c -1.32075,-1.58853 -2.76119,-3.36224 -4.55634,-5.03442 -1.52888,-1.51918 -3.66629,-2.87152 -6.33967,-3.43416 -3.94293,-0.59949 -9.57763,0.18746 -13.36332,0.59953 -4.27373,0.4652 -6.67349,0.65665 -10.67982,1.66552 l 0,0 c -3.36736,0.82886 -3.11881,1.32489 -6.40756,2.32123 -4.39829,1.33247 -12.31137,3.20768 -16.65904,4.58954 0,0 0,0 -10e-6,0 -4.29852,1.43468 -9.25251,0.61878 -14.02056,-0.39577 l 0,0 c -2.31421,-0.50104 -4.6384,-1.07484 -6.99978,-1.45921 -2.08483,-0.3415 -4.2337,-0.54174 -6.306,-0.19528 2.09375,-0.17513 4.17372,0.20161 6.20204,0.70275 2.29483,0.56954 4.54006,1.32565 6.82584,2.02062 l 1e-5,-10e-6 c 4.69654,1.44626 9.77135,2.69666 14.90697,1.55627 4.03819,-0.92559 6.66087,-1.93845 10.68096,-2.82189 3.7428,-0.8225 8.88346,-1.52585 12.62937,-2.12397 l 0,0 c 4.89808,-0.7583 9.83039,-2.52 14.51297,-2.43162 2.57808,0.0487 5.06336,1.41746 7.46572,2.03971 0.89375,0.15004 1.83023,1.05396 2.89042,2.08998 1.2092,1.29286 2.29332,2.92693 3.54999,4.68123 l 0,0 c 1.24549,1.78359 2.64719,3.70715 4.48004,5.54228 1.71881,1.77596 0.56345,2.40934 3.51315,3.17244 2.62162,0.48157 4.87919,0.2457 6.5801,-0.15834 l 0,10e-6 c 1.79708,-0.29542 3.29241,-0.16033 5.61194,-1.17165 1.99643,-0.53543 4.50457,0.0149 6.23388,-0.27645 1.49719,-0.16124 7.06913,-3.42996 7.38676,-3.16318 z"
+         style="fill:#853a0a;fill-opacity:1;fill-rule:evenodd;stroke:none" />
+      <path
+         sodipodi:nodetypes="cccccccccccccccccscccccccccccc"
+         inkscape:connector-curvature="0"
+         id="path3872-2"
+         d="m -140.32012,639.90603 2.4058,-3.64275 c -2.87764,-0.25663 -3.48822,0.63 -5.17126,1.00821 -2.26419,0.41413 -2.55589,0.41333 -4.46202,0.89276 l -3.36774,0.29122 c -1.94587,0.48062 -2.88223,1.99868 -4.60497,2.31854 l 0,0 c -1.47933,0.21098 -2.53249,0.46249 -3.10615,0.35422 -0.98849,-0.0164 -3.1041,1.32146 -5.09876,0.41785 -1.35246,-0.75597 -2.9653,-4.10726 -4.36236,-5.24246 l 0,0 c -1.32075,-1.09708 -2.76119,-2.32204 -4.55634,-3.47688 -1.52888,-1.04918 -3.35061,-6.78137 -6.02399,-7.16994 -3.94293,-0.41402 -9.7562,-0.22767 -13.54189,0.0569 -3.98862,0.41855 -1.95499,0.11243 -5.12398,0.89771 -3.18997,1.45694 -13.89938,5.07968 -4.43574,1.8992 l -3.66071,1.07143 c 4.89808,-0.5237 13.4911,-2.8118 18.17368,-2.75076 2.57808,0.0336 5.15264,1.33606 7.555,1.7658 0.89375,0.10362 1.65166,1.97789 2.71185,2.69339 1.2092,0.89288 2.29332,2.0214 3.54999,3.23296 l 0,0 c 1.24549,1.23178 3.65734,5.84323 5.49019,7.11061 1.71881,1.22652 0.56345,1.66395 3.51315,2.19096 2.62162,0.33258 4.87919,0.16968 6.5801,-0.10935 l 0,0 c 1.79708,-0.20402 3.29241,-0.11072 5.61194,-0.80916 1.99643,-0.36978 4.50457,0.0103 6.23388,-0.19093 1.49719,-0.11135 5.3727,-2.9938 5.69033,-2.80956 z"
+         style="opacity:0.14403292;fill:#000000;fill-opacity:1;fill-rule:evenodd;stroke:none" />
+      <path
+         sodipodi:nodetypes="cccccccsccccccc"
+         inkscape:connector-curvature="0"
+         id="path3872-2-3"
+         d="m -160.87548,637.23087 c 0,0 -2.77038,-1.69655 -4.11767,-2.83175 l -1.69643,-2.05357 c -1.2737,-1.09708 -1.50212,-1.78632 -3.23333,-2.94116 -1.47441,-1.04918 -3.94553,-5.62066 -6.52368,-6.00923 -7.86693,-1.16538 -15.9631,0.15754 -23.3581,1.22247 -7.79697,2.48938 1.28342,0.59271 -15.57589,4.84563 4.7236,-0.5237 25.24266,-5.57966 29.75844,-5.51862 2.48624,0.0336 6.57623,0.80035 8.89301,1.23009 0.86191,0.10362 1.59283,1.97789 2.61525,2.69339 1.16613,0.89288 2.21163,2.0214 3.42353,3.23296 l 0,0 c 1.20113,1.23178 4.86635,4.7718 6.63391,6.03918 1.65758,1.22652 9.45942,0.76239 9.45942,0.76239 z"
+         style="opacity:0.14403292;fill:#ffffff;fill-opacity:1;fill-rule:evenodd;stroke:none" />
+    </g>
+    <g
+       id="g6239"
+       inkscape:export-filename="/home/cefleet/Development/games/Teddy/src/assets/rock.png"
+       inkscape:export-xdpi="5.6186323"
+       inkscape:export-ydpi="5.6186323"
+       transform="matrix(0.10081243,0,0,0.1133931,224.37289,953.89572)">
+      <path
+         inkscape:connector-curvature="0"
+         id="path6142"
+         d="M 356.97632,135.14367 160.54064,123.02184 31.79563,288.68686 -4.0406102,448.29096 224.24951,571.52957 431.30334,519.00164 575.97557,333.13357 502.97582,167.46855 z"
+         style="fill:#642e09;fill-opacity:1;stroke:none" />
+      <path
+         sodipodi:nodetypes="ccccccccc"
+         inkscape:connector-curvature="0"
+         id="path6219-8"
+         d="m 480.38588,178.7179 42.10539,36.87216 51.64085,117.45272 -114.57964,156.84181 -54.16259,32.09864 -8.07173,-21.1806 45.40983,-32.9447 90.57515,-174.19145 z"
+         style="opacity:0.16049386;fill:#000000;fill-opacity:1;stroke:none" />
+      <path
+         sodipodi:nodetypes="ccccccccccc"
+         inkscape:connector-curvature="0"
+         id="path6142-6"
+         d="m 358.63008,125.69737 -188.58141,11.8933 -63.13482,190.89669 -10.745707,81.59172 124.653127,-43.91957 140.13839,71.08535 32.28836,82.64077 -1.4666,-54.852 141.05793,-178.758 -49.2213,-102.88638 z"
+         style="opacity:0.08230453;fill:#ffffff;fill-opacity:1;stroke:none" />
+      <path
+         sodipodi:nodetypes="ccccccccc"
+         inkscape:connector-curvature="0"
+         id="path6142-5"
+         d="m 342.39431,145.35441 -175.68246,-4.2934 -22.15383,141.09898 -35.47592,94.98347 189.98056,-47.25571 104.17076,95.0332 L 528.85755,293.2735 486.19736,162.41962 z"
+         style="opacity:0.090535;fill:#ffffff;fill-opacity:1;stroke:none" />
+      <path
+         inkscape:connector-curvature="0"
+         id="path6219"
+         d="M 123.37713,185.6513 49.050115,278.58533 1.2684624,440.20974 212.3041,557.38744 368.92174,529.10316 375.55808,496.77828 232.21313,516.98133 29.141093,438.18944 z"
+         style="opacity:0.16049386;fill:#000000;fill-opacity:1;stroke:none" />
+      <path
+         sodipodi:nodetypes="ccccccccc"
+         inkscape:connector-curvature="0"
+         id="path6142-5-4"
+         d="m 347.5599,159.55114 -135.38135,11.95801 -20.98518,87.09153 -18.4024,81.95887 162.34575,-61.52607 61.20925,97.83696 102.16378,-101.50668 -39.26907,-96.84643 z"
+         style="opacity:0.05349791;fill:#ffffff;fill-opacity:1;stroke:none" />
+    </g>
+    <g
+       id="g6239-3"
+       inkscape:export-filename="/home/cefleet/Development/games/Teddy/src/assets/rock.png"
+       inkscape:export-xdpi="5.6186323"
+       inkscape:export-ydpi="5.6186323"
+       transform="matrix(0.10081243,0,0,0.1133931,211.43491,921.55902)">
+      <path
+         inkscape:connector-curvature="0"
+         id="path6142-0"
+         d="M 356.97632,135.14367 160.54064,123.02184 31.79563,288.68686 -4.0406102,448.29096 224.24951,571.52957 431.30334,519.00164 575.97557,333.13357 502.97582,167.46855 z"
+         style="fill:#642e09;fill-opacity:1;stroke:none" />
+      <path
+         sodipodi:nodetypes="ccccccccc"
+         inkscape:connector-curvature="0"
+         id="path6219-8-2"
+         d="m 480.38588,178.7179 42.10539,36.87216 51.64085,117.45272 -114.57964,156.84181 -54.16259,32.09864 -8.07173,-21.1806 45.40983,-32.9447 90.57515,-174.19145 z"
+         style="opacity:0.16049386;fill:#000000;fill-opacity:1;stroke:none" />
+      <path
+         sodipodi:nodetypes="ccccccccccc"
+         inkscape:connector-curvature="0"
+         id="path6142-6-2"
+         d="m 358.63008,125.69737 -188.58141,11.8933 -63.13482,190.89669 -10.745707,81.59172 124.653127,-43.91957 140.13839,71.08535 32.28836,82.64077 -1.4666,-54.852 141.05793,-178.758 -49.2213,-102.88638 z"
+         style="opacity:0.08230453;fill:#ffffff;fill-opacity:1;stroke:none" />
+      <path
+         sodipodi:nodetypes="ccccccccc"
+         inkscape:connector-curvature="0"
+         id="path6142-5-9"
+         d="m 342.39431,145.35441 -175.68246,-4.2934 -22.15383,141.09898 -35.47592,94.98347 189.98056,-47.25571 104.17076,95.0332 L 528.85755,293.2735 486.19736,162.41962 z"
+         style="opacity:0.090535;fill:#ffffff;fill-opacity:1;stroke:none" />
+      <path
+         inkscape:connector-curvature="0"
+         id="path6219-0"
+         d="M 123.37713,185.6513 49.050115,278.58533 1.2684624,440.20974 212.3041,557.38744 368.92174,529.10316 375.55808,496.77828 232.21313,516.98133 29.141093,438.18944 z"
+         style="opacity:0.16049386;fill:#000000;fill-opacity:1;stroke:none" />
+      <path
+         sodipodi:nodetypes="ccccccccc"
+         inkscape:connector-curvature="0"
+         id="path6142-5-4-1"
+         d="m 347.5599,159.55114 -135.38135,11.95801 -20.98518,87.09153 -18.4024,81.95887 162.34575,-61.52607 61.20925,97.83696 102.16378,-101.50668 -39.26907,-96.84643 z"
+         style="opacity:0.05349791;fill:#ffffff;fill-opacity:1;stroke:none" />
+    </g>
+    <g
+       id="g6239-4"
+       inkscape:export-filename="/home/cefleet/Development/games/Teddy/src/assets/rock.png"
+       inkscape:export-xdpi="5.6186323"
+       inkscape:export-ydpi="5.6186323"
+       transform="matrix(-0.09795445,0,0,0.1172156,271.03887,879.27132)">
+      <path
+         inkscape:connector-curvature="0"
+         id="path6142-1"
+         d="M 356.97632,135.14367 160.54064,123.02184 31.79563,288.68686 -4.0406102,448.29096 224.24951,571.52957 431.30334,519.00164 575.97557,333.13357 502.97582,167.46855 z"
+         style="fill:#642e09;fill-opacity:1;stroke:none" />
+      <path
+         sodipodi:nodetypes="ccccccccc"
+         inkscape:connector-curvature="0"
+         id="path6219-8-8"
+         d="m 480.38588,178.7179 42.10539,36.87216 51.64085,117.45272 -114.57964,156.84181 -54.16259,32.09864 -8.07173,-21.1806 45.40983,-32.9447 90.57515,-174.19145 z"
+         style="opacity:0.16049386;fill:#000000;fill-opacity:1;stroke:none" />
+      <path
+         sodipodi:nodetypes="ccccccccccc"
+         inkscape:connector-curvature="0"
+         id="path6142-6-0"
+         d="m 358.63008,125.69737 -188.58141,11.8933 -63.13482,190.89669 -10.745707,81.59172 124.653127,-43.91957 140.13839,71.08535 32.28836,82.64077 -1.4666,-54.852 141.05793,-178.758 -49.2213,-102.88638 z"
+         style="opacity:0.08230453;fill:#ffffff;fill-opacity:1;stroke:none" />
+      <path
+         sodipodi:nodetypes="ccccccccc"
+         inkscape:connector-curvature="0"
+         id="path6142-5-7"
+         d="m 342.39431,145.35441 -175.68246,-4.2934 -22.15383,141.09898 -35.47592,94.98347 189.98056,-47.25571 104.17076,95.0332 L 528.85755,293.2735 486.19736,162.41962 z"
+         style="opacity:0.090535;fill:#ffffff;fill-opacity:1;stroke:none" />
+      <path
+         inkscape:connector-curvature="0"
+         id="path6219-1"
+         d="M 123.37713,185.6513 49.050115,278.58533 1.2684624,440.20974 212.3041,557.38744 368.92174,529.10316 375.55808,496.77828 232.21313,516.98133 29.141093,438.18944 z"
+         style="opacity:0.16049386;fill:#000000;fill-opacity:1;stroke:none" />
+      <path
+         sodipodi:nodetypes="ccccccccc"
+         inkscape:connector-curvature="0"
+         id="path6142-5-4-4"
+         d="m 347.5599,159.55114 -135.38135,11.95801 -20.98518,87.09153 -18.4024,81.95887 162.34575,-61.52607 61.20925,97.83696 102.16378,-101.50668 -39.26907,-96.84643 z"
+         style="opacity:0.05349791;fill:#ffffff;fill-opacity:1;stroke:none" />
+    </g>
+    <g
+       id="g6239-5"
+       inkscape:export-filename="/home/cefleet/Development/games/Teddy/src/assets/rock.png"
+       inkscape:export-xdpi="5.6186323"
+       inkscape:export-ydpi="5.6186323"
+       transform="matrix(0.10895737,0,0,0.13945779,226.77162,835.9229)">
+      <path
+         inkscape:connector-curvature="0"
+         id="path6142-52"
+         d="M 356.97632,135.14367 160.54064,123.02184 31.79563,288.68686 -4.0406102,448.29096 224.24951,571.52957 431.30334,519.00164 575.97557,333.13357 502.97582,167.46855 z"
+         style="fill:#642e09;fill-opacity:1;stroke:none" />
+      <path
+         sodipodi:nodetypes="ccccccccc"
+         inkscape:connector-curvature="0"
+         id="path6219-8-0"
+         d="m 480.38588,178.7179 42.10539,36.87216 51.64085,117.45272 -114.57964,156.84181 -54.16259,32.09864 -8.07173,-21.1806 45.40983,-32.9447 90.57515,-174.19145 z"
+         style="opacity:0.16049386;fill:#000000;fill-opacity:1;stroke:none" />
+      <path
+         sodipodi:nodetypes="ccccccccccc"
+         inkscape:connector-curvature="0"
+         id="path6142-6-7"
+         d="m 358.63008,125.69737 -188.58141,11.8933 -63.13482,190.89669 -10.745707,81.59172 124.653127,-43.91957 140.13839,71.08535 32.28836,82.64077 -1.4666,-54.852 141.05793,-178.758 -49.2213,-102.88638 z"
+         style="opacity:0.08230453;fill:#ffffff;fill-opacity:1;stroke:none" />
+      <path
+         sodipodi:nodetypes="ccccccccc"
+         inkscape:connector-curvature="0"
+         id="path6142-5-91"
+         d="m 342.39431,145.35441 -175.68246,-4.2934 -22.15383,141.09898 -35.47592,94.98347 189.98056,-47.25571 104.17076,95.0332 L 528.85755,293.2735 486.19736,162.41962 z"
+         style="opacity:0.090535;fill:#ffffff;fill-opacity:1;stroke:none" />
+      <path
+         inkscape:connector-curvature="0"
+         id="path6219-2"
+         d="M 123.37713,185.6513 49.050115,278.58533 1.2684624,440.20974 212.3041,557.38744 368.92174,529.10316 375.55808,496.77828 232.21313,516.98133 29.141093,438.18944 z"
+         style="opacity:0.16049386;fill:#000000;fill-opacity:1;stroke:none" />
+      <path
+         sodipodi:nodetypes="ccccccccc"
+         inkscape:connector-curvature="0"
+         id="path6142-5-4-14"
+         d="m 347.5599,159.55114 -135.38135,11.95801 -20.98518,87.09153 -18.4024,81.95887 162.34575,-61.52607 61.20925,97.83696 102.16378,-101.50668 -39.26907,-96.84643 z"
+         style="opacity:0.05349791;fill:#ffffff;fill-opacity:1;stroke:none" />
+    </g>
+    <g
+       id="g6239-8"
+       inkscape:export-filename="/home/cefleet/Development/games/Teddy/src/assets/rock.png"
+       inkscape:export-xdpi="5.6186323"
+       inkscape:export-ydpi="5.6186323"
+       transform="matrix(0,0.1133931,-0.10081243,0,300.78432,915.75799)">
+      <path
+         inkscape:connector-curvature="0"
+         id="path6142-7"
+         d="M 356.97632,135.14367 160.54064,123.02184 31.79563,288.68686 -4.0406102,448.29096 224.24951,571.52957 431.30334,519.00164 575.97557,333.13357 502.97582,167.46855 z"
+         style="fill:#642e09;fill-opacity:1;stroke:none" />
+      <path
+         sodipodi:nodetypes="ccccccccc"
+         inkscape:connector-curvature="0"
+         id="path6219-8-84"
+         d="m 480.38588,178.7179 42.10539,36.87216 51.64085,117.45272 -114.57964,156.84181 -54.16259,32.09864 -8.07173,-21.1806 45.40983,-32.9447 90.57515,-174.19145 z"
+         style="opacity:0.16049386;fill:#000000;fill-opacity:1;stroke:none" />
+      <path
+         sodipodi:nodetypes="ccccccccccc"
+         inkscape:connector-curvature="0"
+         id="path6142-6-8"
+         d="m 358.63008,125.69737 -188.58141,11.8933 -63.13482,190.89669 -10.745707,81.59172 124.653127,-43.91957 140.13839,71.08535 32.28836,82.64077 -1.4666,-54.852 141.05793,-178.758 -49.2213,-102.88638 z"
+         style="opacity:0.08230453;fill:#ffffff;fill-opacity:1;stroke:none" />
+      <path
+         sodipodi:nodetypes="ccccccccc"
+         inkscape:connector-curvature="0"
+         id="path6142-5-5"
+         d="m 342.39431,145.35441 -175.68246,-4.2934 -22.15383,141.09898 -35.47592,94.98347 189.98056,-47.25571 104.17076,95.0332 L 528.85755,293.2735 486.19736,162.41962 z"
+         style="opacity:0.090535;fill:#ffffff;fill-opacity:1;stroke:none" />
+      <path
+         inkscape:connector-curvature="0"
+         id="path6219-5"
+         d="M 123.37713,185.6513 49.050115,278.58533 1.2684624,440.20974 212.3041,557.38744 368.92174,529.10316 375.55808,496.77828 232.21313,516.98133 29.141093,438.18944 z"
+         style="opacity:0.16049386;fill:#000000;fill-opacity:1;stroke:none" />
+      <path
+         sodipodi:nodetypes="ccccccccc"
+         inkscape:connector-curvature="0"
+         id="path6142-5-4-15"
+         d="m 347.5599,159.55114 -135.38135,11.95801 -20.98518,87.09153 -18.4024,81.95887 162.34575,-61.52607 61.20925,97.83696 102.16378,-101.50668 -39.26907,-96.84643 z"
+         style="opacity:0.05349791;fill:#ffffff;fill-opacity:1;stroke:none" />
+    </g>
+    <g
+       id="g6239-7"
+       inkscape:export-filename="/home/cefleet/Development/games/Teddy/src/assets/rock.png"
+       inkscape:export-xdpi="5.6186323"
+       inkscape:export-ydpi="5.6186323"
+       transform="matrix(0,-0.1133931,0.10081243,0,202.75934,907.81336)">
+      <path
+         inkscape:connector-curvature="0"
+         id="path6142-3"
+         d="M 356.97632,135.14367 160.54064,123.02184 31.79563,288.68686 -4.0406102,448.29096 224.24951,571.52957 431.30334,519.00164 575.97557,333.13357 502.97582,167.46855 z"
+         style="fill:#642e09;fill-opacity:1;stroke:none" />
+      <path
+         sodipodi:nodetypes="ccccccccc"
+         inkscape:connector-curvature="0"
+         id="path6219-8-6"
+         d="m 480.38588,178.7179 42.10539,36.87216 51.64085,117.45272 -114.57964,156.84181 -54.16259,32.09864 -8.07173,-21.1806 45.40983,-32.9447 90.57515,-174.19145 z"
+         style="opacity:0.16049386;fill:#000000;fill-opacity:1;stroke:none" />
+      <path
+         sodipodi:nodetypes="ccccccccccc"
+         inkscape:connector-curvature="0"
+         id="path6142-6-74"
+         d="m 358.63008,125.69737 -188.58141,11.8933 -63.13482,190.89669 -10.745707,81.59172 124.653127,-43.91957 140.13839,71.08535 32.28836,82.64077 -1.4666,-54.852 141.05793,-178.758 -49.2213,-102.88638 z"
+         style="opacity:0.08230453;fill:#ffffff;fill-opacity:1;stroke:none" />
+      <path
+         sodipodi:nodetypes="ccccccccc"
+         inkscape:connector-curvature="0"
+         id="path6142-5-3"
+         d="m 342.39431,145.35441 -175.68246,-4.2934 -22.15383,141.09898 -35.47592,94.98347 189.98056,-47.25571 104.17076,95.0332 L 528.85755,293.2735 486.19736,162.41962 z"
+         style="opacity:0.090535;fill:#ffffff;fill-opacity:1;stroke:none" />
+      <path
+         inkscape:connector-curvature="0"
+         id="path6219-04"
+         d="M 123.37713,185.6513 49.050115,278.58533 1.2684624,440.20974 212.3041,557.38744 368.92174,529.10316 375.55808,496.77828 232.21313,516.98133 29.141093,438.18944 z"
+         style="opacity:0.16049386;fill:#000000;fill-opacity:1;stroke:none" />
+      <path
+         sodipodi:nodetypes="ccccccccc"
+         inkscape:connector-curvature="0"
+         id="path6142-5-4-5"
+         d="m 347.5599,159.55114 -135.38135,11.95801 -20.98518,87.09153 -18.4024,81.95887 162.34575,-61.52607 61.20925,97.83696 102.16378,-101.50668 -39.26907,-96.84643 z"
+         style="opacity:0.05349791;fill:#ffffff;fill-opacity:1;stroke:none" />
+    </g>
+    <g
+       id="g6239-7-0"
+       inkscape:export-filename="/home/cefleet/Development/games/Teddy/src/assets/rock.png"
+       inkscape:export-xdpi="5.6186323"
+       inkscape:export-ydpi="5.6186323"
+       transform="matrix(0,-0.04467714,0.03972031,0,240.98222,909.15036)">
+      <path
+         inkscape:connector-curvature="0"
+         id="path6142-3-5"
+         d="M 356.97632,135.14367 160.54064,123.02184 31.79563,288.68686 -4.0406102,448.29096 224.24951,571.52957 431.30334,519.00164 575.97557,333.13357 502.97582,167.46855 z"
+         style="fill:#642e09;fill-opacity:1;stroke:none" />
+      <path
+         sodipodi:nodetypes="ccccccccc"
+         inkscape:connector-curvature="0"
+         id="path6219-8-6-0"
+         d="m 480.38588,178.7179 42.10539,36.87216 51.64085,117.45272 -114.57964,156.84181 -54.16259,32.09864 -8.07173,-21.1806 45.40983,-32.9447 90.57515,-174.19145 z"
+         style="opacity:0.16049386;fill:#000000;fill-opacity:1;stroke:none" />
+      <path
+         sodipodi:nodetypes="ccccccccccc"
+         inkscape:connector-curvature="0"
+         id="path6142-6-74-5"
+         d="m 358.63008,125.69737 -188.58141,11.8933 -63.13482,190.89669 -10.745707,81.59172 124.653127,-43.91957 140.13839,71.08535 32.28836,82.64077 -1.4666,-54.852 141.05793,-178.758 -49.2213,-102.88638 z"
+         style="opacity:0.08230453;fill:#ffffff;fill-opacity:1;stroke:none" />
+      <path
+         sodipodi:nodetypes="ccccccccc"
+         inkscape:connector-curvature="0"
+         id="path6142-5-3-2"
+         d="m 342.39431,145.35441 -175.68246,-4.2934 -22.15383,141.09898 -35.47592,94.98347 189.98056,-47.25571 104.17076,95.0332 L 528.85755,293.2735 486.19736,162.41962 z"
+         style="opacity:0.090535;fill:#ffffff;fill-opacity:1;stroke:none" />
+      <path
+         inkscape:connector-curvature="0"
+         id="path6219-04-2"
+         d="M 123.37713,185.6513 49.050115,278.58533 1.2684624,440.20974 212.3041,557.38744 368.92174,529.10316 375.55808,496.77828 232.21313,516.98133 29.141093,438.18944 z"
+         style="opacity:0.16049386;fill:#000000;fill-opacity:1;stroke:none" />
+      <path
+         sodipodi:nodetypes="ccccccccc"
+         inkscape:connector-curvature="0"
+         id="path6142-5-4-5-7"
+         d="m 347.5599,159.55114 -135.38135,11.95801 -20.98518,87.09153 -18.4024,81.95887 162.34575,-61.52607 61.20925,97.83696 102.16378,-101.50668 -39.26907,-96.84643 z"
+         style="opacity:0.05349791;fill:#ffffff;fill-opacity:1;stroke:none" />
+    </g>
+    <g
+       id="g6239-7-9"
+       inkscape:export-filename="/home/cefleet/Development/games/Teddy/src/assets/rock.png"
+       inkscape:export-xdpi="5.6186323"
+       inkscape:export-ydpi="5.6186323"
+       transform="matrix(0,-0.08021989,0.07131968,0,223.05509,983.82219)">
+      <path
+         inkscape:connector-curvature="0"
+         id="path6142-3-3"
+         d="M 356.97632,135.14367 160.54064,123.02184 31.79563,288.68686 -4.0406102,448.29096 224.24951,571.52957 431.30334,519.00164 575.97557,333.13357 502.97582,167.46855 z"
+         style="fill:#642e09;fill-opacity:1;stroke:none" />
+      <path
+         sodipodi:nodetypes="ccccccccc"
+         inkscape:connector-curvature="0"
+         id="path6219-8-6-8"
+         d="m 480.38588,178.7179 42.10539,36.87216 51.64085,117.45272 -114.57964,156.84181 -54.16259,32.09864 -8.07173,-21.1806 45.40983,-32.9447 90.57515,-174.19145 z"
+         style="opacity:0.16049386;fill:#000000;fill-opacity:1;stroke:none" />
+      <path
+         sodipodi:nodetypes="ccccccccccc"
+         inkscape:connector-curvature="0"
+         id="path6142-6-74-2"
+         d="m 358.63008,125.69737 -188.58141,11.8933 -63.13482,190.89669 -10.745707,81.59172 124.653127,-43.91957 140.13839,71.08535 32.28836,82.64077 -1.4666,-54.852 141.05793,-178.758 -49.2213,-102.88638 z"
+         style="opacity:0.08230453;fill:#ffffff;fill-opacity:1;stroke:none" />
+      <path
+         sodipodi:nodetypes="ccccccccc"
+         inkscape:connector-curvature="0"
+         id="path6142-5-3-5"
+         d="m 342.39431,145.35441 -175.68246,-4.2934 -22.15383,141.09898 -35.47592,94.98347 189.98056,-47.25571 104.17076,95.0332 L 528.85755,293.2735 486.19736,162.41962 z"
+         style="opacity:0.090535;fill:#ffffff;fill-opacity:1;stroke:none" />
+      <path
+         inkscape:connector-curvature="0"
+         id="path6219-04-4"
+         d="M 123.37713,185.6513 49.050115,278.58533 1.2684624,440.20974 212.3041,557.38744 368.92174,529.10316 375.55808,496.77828 232.21313,516.98133 29.141093,438.18944 z"
+         style="opacity:0.16049386;fill:#000000;fill-opacity:1;stroke:none" />
+      <path
+         sodipodi:nodetypes="ccccccccc"
+         inkscape:connector-curvature="0"
+         id="path6142-5-4-5-2"
+         d="m 347.5599,159.55114 -135.38135,11.95801 -20.98518,87.09153 -18.4024,81.95887 162.34575,-61.52607 61.20925,97.83696 102.16378,-101.50668 -39.26907,-96.84643 z"
+         style="opacity:0.05349791;fill:#ffffff;fill-opacity:1;stroke:none" />
+    </g>
+    <g
+       id="g6239-7-4"
+       inkscape:export-filename="/home/cefleet/Development/games/Teddy/src/assets/rock.png"
+       inkscape:export-xdpi="5.6186323"
+       inkscape:export-ydpi="5.6186323"
+       transform="matrix(0,-0.06208955,0.05520086,0,240.02262,872.41864)">
+      <path
+         inkscape:connector-curvature="0"
+         id="path6142-3-36"
+         d="M 356.97632,135.14367 160.54064,123.02184 31.79563,288.68686 -4.0406102,448.29096 224.24951,571.52957 431.30334,519.00164 575.97557,333.13357 502.97582,167.46855 z"
+         style="fill:#642e09;fill-opacity:1;stroke:none" />
+      <path
+         sodipodi:nodetypes="ccccccccc"
+         inkscape:connector-curvature="0"
+         id="path6219-8-6-2"
+         d="m 480.38588,178.7179 42.10539,36.87216 51.64085,117.45272 -114.57964,156.84181 -54.16259,32.09864 -8.07173,-21.1806 45.40983,-32.9447 90.57515,-174.19145 z"
+         style="opacity:0.16049386;fill:#000000;fill-opacity:1;stroke:none" />
+      <path
+         sodipodi:nodetypes="ccccccccccc"
+         inkscape:connector-curvature="0"
+         id="path6142-6-74-0"
+         d="m 358.63008,125.69737 -188.58141,11.8933 -63.13482,190.89669 -10.745707,81.59172 124.653127,-43.91957 140.13839,71.08535 32.28836,82.64077 -1.4666,-54.852 141.05793,-178.758 -49.2213,-102.88638 z"
+         style="opacity:0.08230453;fill:#ffffff;fill-opacity:1;stroke:none" />
+      <path
+         sodipodi:nodetypes="ccccccccc"
+         inkscape:connector-curvature="0"
+         id="path6142-5-3-1"
+         d="m 342.39431,145.35441 -175.68246,-4.2934 -22.15383,141.09898 -35.47592,94.98347 189.98056,-47.25571 104.17076,95.0332 L 528.85755,293.2735 486.19736,162.41962 z"
+         style="opacity:0.090535;fill:#ffffff;fill-opacity:1;stroke:none" />
+      <path
+         inkscape:connector-curvature="0"
+         id="path6219-04-3"
+         d="M 123.37713,185.6513 49.050115,278.58533 1.2684624,440.20974 212.3041,557.38744 368.92174,529.10316 375.55808,496.77828 232.21313,516.98133 29.141093,438.18944 z"
+         style="opacity:0.16049386;fill:#000000;fill-opacity:1;stroke:none" />
+      <path
+         sodipodi:nodetypes="ccccccccc"
+         inkscape:connector-curvature="0"
+         id="path6142-5-4-5-70"
+         d="m 347.5599,159.55114 -135.38135,11.95801 -20.98518,87.09153 -18.4024,81.95887 162.34575,-61.52607 61.20925,97.83696 102.16378,-101.50668 -39.26907,-96.84643 z"
+         style="opacity:0.05349791;fill:#ffffff;fill-opacity:1;stroke:none" />
+    </g>
+    <g
+       id="g6239-7-6"
+       inkscape:export-filename="/home/cefleet/Development/games/Teddy/src/assets/rock.png"
+       inkscape:export-xdpi="5.6186323"
+       inkscape:export-ydpi="5.6186323"
+       transform="matrix(0,-0.06575407,0.05845883,0,245.42368,1002.0589)">
+      <path
+         inkscape:connector-curvature="0"
+         id="path6142-3-50"
+         d="M 356.97632,135.14367 160.54064,123.02184 31.79563,288.68686 -4.0406102,448.29096 224.24951,571.52957 431.30334,519.00164 575.97557,333.13357 502.97582,167.46855 z"
+         style="fill:#642e09;fill-opacity:1;stroke:none" />
+      <path
+         sodipodi:nodetypes="ccccccccc"
+         inkscape:connector-curvature="0"
+         id="path6219-8-6-28"
+         d="m 480.38588,178.7179 42.10539,36.87216 51.64085,117.45272 -114.57964,156.84181 -54.16259,32.09864 -8.07173,-21.1806 45.40983,-32.9447 90.57515,-174.19145 z"
+         style="opacity:0.16049386;fill:#000000;fill-opacity:1;stroke:none" />
+      <path
+         sodipodi:nodetypes="ccccccccccc"
+         inkscape:connector-curvature="0"
+         id="path6142-6-74-06"
+         d="m 358.63008,125.69737 -188.58141,11.8933 -63.13482,190.89669 -10.745707,81.59172 124.653127,-43.91957 140.13839,71.08535 32.28836,82.64077 -1.4666,-54.852 141.05793,-178.758 -49.2213,-102.88638 z"
+         style="opacity:0.08230453;fill:#ffffff;fill-opacity:1;stroke:none" />
+      <path
+         sodipodi:nodetypes="ccccccccc"
+         inkscape:connector-curvature="0"
+         id="path6142-5-3-4"
+         d="m 342.39431,145.35441 -175.68246,-4.2934 -22.15383,141.09898 -35.47592,94.98347 189.98056,-47.25571 104.17076,95.0332 L 528.85755,293.2735 486.19736,162.41962 z"
+         style="opacity:0.090535;fill:#ffffff;fill-opacity:1;stroke:none" />
+      <path
+         inkscape:connector-curvature="0"
+         id="path6219-04-0"
+         d="M 123.37713,185.6513 49.050115,278.58533 1.2684624,440.20974 212.3041,557.38744 368.92174,529.10316 375.55808,496.77828 232.21313,516.98133 29.141093,438.18944 z"
+         style="opacity:0.16049386;fill:#000000;fill-opacity:1;stroke:none" />
+      <path
+         sodipodi:nodetypes="ccccccccc"
+         inkscape:connector-curvature="0"
+         id="path6142-5-4-5-26"
+         d="m 347.5599,159.55114 -135.38135,11.95801 -20.98518,87.09153 -18.4024,81.95887 162.34575,-61.52607 61.20925,97.83696 102.16378,-101.50668 -39.26907,-96.84643 z"
+         style="opacity:0.05349791;fill:#ffffff;fill-opacity:1;stroke:none" />
+    </g>
+    <g
+       id="g6239-7-0-8"
+       inkscape:export-filename="/home/cefleet/Development/games/Teddy/src/assets/rock.png"
+       inkscape:export-xdpi="5.6186323"
+       inkscape:export-ydpi="5.6186323"
+       transform="matrix(0,-0.04467714,0.03972031,0,262.60591,929.36932)">
+      <path
+         inkscape:connector-curvature="0"
+         id="path6142-3-5-4"
+         d="M 356.97632,135.14367 160.54064,123.02184 31.79563,288.68686 -4.0406102,448.29096 224.24951,571.52957 431.30334,519.00164 575.97557,333.13357 502.97582,167.46855 z"
+         style="fill:#642e09;fill-opacity:1;stroke:none" />
+      <path
+         sodipodi:nodetypes="ccccccccc"
+         inkscape:connector-curvature="0"
+         id="path6219-8-6-0-0"
+         d="m 480.38588,178.7179 42.10539,36.87216 51.64085,117.45272 -114.57964,156.84181 -54.16259,32.09864 -8.07173,-21.1806 45.40983,-32.9447 90.57515,-174.19145 z"
+         style="opacity:0.16049386;fill:#000000;fill-opacity:1;stroke:none" />
+      <path
+         sodipodi:nodetypes="ccccccccccc"
+         inkscape:connector-curvature="0"
+         id="path6142-6-74-5-7"
+         d="m 358.63008,125.69737 -188.58141,11.8933 -63.13482,190.89669 -10.745707,81.59172 124.653127,-43.91957 140.13839,71.08535 32.28836,82.64077 -1.4666,-54.852 141.05793,-178.758 -49.2213,-102.88638 z"
+         style="opacity:0.08230453;fill:#ffffff;fill-opacity:1;stroke:none" />
+      <path
+         sodipodi:nodetypes="ccccccccc"
+         inkscape:connector-curvature="0"
+         id="path6142-5-3-2-6"
+         d="m 342.39431,145.35441 -175.68246,-4.2934 -22.15383,141.09898 -35.47592,94.98347 189.98056,-47.25571 104.17076,95.0332 L 528.85755,293.2735 486.19736,162.41962 z"
+         style="opacity:0.090535;fill:#ffffff;fill-opacity:1;stroke:none" />
+      <path
+         inkscape:connector-curvature="0"
+         id="path6219-04-2-5"
+         d="M 123.37713,185.6513 49.050115,278.58533 1.2684624,440.20974 212.3041,557.38744 368.92174,529.10316 375.55808,496.77828 232.21313,516.98133 29.141093,438.18944 z"
+         style="opacity:0.16049386;fill:#000000;fill-opacity:1;stroke:none" />
+      <path
+         sodipodi:nodetypes="ccccccccc"
+         inkscape:connector-curvature="0"
+         id="path6142-5-4-5-7-6"
+         d="m 347.5599,159.55114 -135.38135,11.95801 -20.98518,87.09153 -18.4024,81.95887 162.34575,-61.52607 61.20925,97.83696 102.16378,-101.50668 -39.26907,-96.84643 z"
+         style="opacity:0.05349791;fill:#ffffff;fill-opacity:1;stroke:none" />
+    </g>
+    <g
+       id="g6239-80"
+       inkscape:export-filename="/home/cefleet/Development/games/Teddy/src/assets/rock.png"
+       inkscape:export-xdpi="5.6186323"
+       inkscape:export-ydpi="5.6186323"
+       transform="matrix(0.10081243,0,0,-0.1133931,221.05753,766.45917)">
+      <path
+         inkscape:connector-curvature="0"
+         id="path6142-2"
+         d="M 356.97632,135.14367 160.54064,123.02184 31.79563,288.68686 -4.0406102,448.29096 224.24951,571.52957 431.30334,519.00164 575.97557,333.13357 502.97582,167.46855 z"
+         style="fill:#642e09;fill-opacity:1;stroke:none" />
+      <path
+         sodipodi:nodetypes="ccccccccc"
+         inkscape:connector-curvature="0"
+         id="path6219-8-24"
+         d="m 480.38588,178.7179 42.10539,36.87216 51.64085,117.45272 -114.57964,156.84181 -54.16259,32.09864 -8.07173,-21.1806 45.40983,-32.9447 90.57515,-174.19145 z"
+         style="opacity:0.16049386;fill:#000000;fill-opacity:1;stroke:none" />
+      <path
+         sodipodi:nodetypes="ccccccccccc"
+         inkscape:connector-curvature="0"
+         id="path6142-6-78"
+         d="m 358.63008,125.69737 -188.58141,11.8933 -63.13482,190.89669 -10.745707,81.59172 124.653127,-43.91957 140.13839,71.08535 32.28836,82.64077 -1.4666,-54.852 141.05793,-178.758 -49.2213,-102.88638 z"
+         style="opacity:0.08230453;fill:#ffffff;fill-opacity:1;stroke:none" />
+      <path
+         sodipodi:nodetypes="ccccccccc"
+         inkscape:connector-curvature="0"
+         id="path6142-5-6"
+         d="m 342.39431,145.35441 -175.68246,-4.2934 -22.15383,141.09898 -35.47592,94.98347 189.98056,-47.25571 104.17076,95.0332 L 528.85755,293.2735 486.19736,162.41962 z"
+         style="opacity:0.090535;fill:#ffffff;fill-opacity:1;stroke:none" />
+      <path
+         inkscape:connector-curvature="0"
+         id="path6219-7"
+         d="M 123.37713,185.6513 49.050115,278.58533 1.2684624,440.20974 212.3041,557.38744 368.92174,529.10316 375.55808,496.77828 232.21313,516.98133 29.141093,438.18944 z"
+         style="opacity:0.16049386;fill:#000000;fill-opacity:1;stroke:none" />
+      <path
+         sodipodi:nodetypes="ccccccccc"
+         inkscape:connector-curvature="0"
+         id="path6142-5-4-2"
+         d="m 347.5599,159.55114 -135.38135,11.95801 -20.98518,87.09153 -18.4024,81.95887 162.34575,-61.52607 61.20925,97.83696 102.16378,-101.50668 -39.26907,-96.84643 z"
+         style="opacity:0.05349791;fill:#ffffff;fill-opacity:1;stroke:none" />
+    </g>
+    <g
+       id="g6239-3-9"
+       inkscape:export-filename="/home/cefleet/Development/games/Teddy/src/assets/rock.png"
+       inkscape:export-xdpi="5.6186323"
+       inkscape:export-ydpi="5.6186323"
+       transform="matrix(0.10081243,0,0,-0.1133931,214.33585,793.22401)">
+      <path
+         inkscape:connector-curvature="0"
+         id="path6142-0-6"
+         d="M 356.97632,135.14367 160.54064,123.02184 31.79563,288.68686 -4.0406102,448.29096 224.24951,571.52957 431.30334,519.00164 575.97557,333.13357 502.97582,167.46855 z"
+         style="fill:#642e09;fill-opacity:1;stroke:none" />
+      <path
+         sodipodi:nodetypes="ccccccccc"
+         inkscape:connector-curvature="0"
+         id="path6219-8-2-4"
+         d="m 480.38588,178.7179 42.10539,36.87216 51.64085,117.45272 -114.57964,156.84181 -54.16259,32.09864 -8.07173,-21.1806 45.40983,-32.9447 90.57515,-174.19145 z"
+         style="opacity:0.16049386;fill:#000000;fill-opacity:1;stroke:none" />
+      <path
+         sodipodi:nodetypes="ccccccccccc"
+         inkscape:connector-curvature="0"
+         id="path6142-6-2-7"
+         d="m 358.63008,125.69737 -188.58141,11.8933 -63.13482,190.89669 -10.745707,81.59172 124.653127,-43.91957 140.13839,71.08535 32.28836,82.64077 -1.4666,-54.852 141.05793,-178.758 -49.2213,-102.88638 z"
+         style="opacity:0.08230453;fill:#ffffff;fill-opacity:1;stroke:none" />
+      <path
+         sodipodi:nodetypes="ccccccccc"
+         inkscape:connector-curvature="0"
+         id="path6142-5-9-2"
+         d="m 342.39431,145.35441 -175.68246,-4.2934 -22.15383,141.09898 -35.47592,94.98347 189.98056,-47.25571 104.17076,95.0332 L 528.85755,293.2735 486.19736,162.41962 z"
+         style="opacity:0.090535;fill:#ffffff;fill-opacity:1;stroke:none" />
+      <path
+         inkscape:connector-curvature="0"
+         id="path6219-0-6"
+         d="M 123.37713,185.6513 49.050115,278.58533 1.2684624,440.20974 212.3041,557.38744 368.92174,529.10316 375.55808,496.77828 232.21313,516.98133 29.141093,438.18944 z"
+         style="opacity:0.16049386;fill:#000000;fill-opacity:1;stroke:none" />
+      <path
+         sodipodi:nodetypes="ccccccccc"
+         inkscape:connector-curvature="0"
+         id="path6142-5-4-1-9"
+         d="m 347.5599,159.55114 -135.38135,11.95801 -20.98518,87.09153 -18.4024,81.95887 162.34575,-61.52607 61.20925,97.83696 102.16378,-101.50668 -39.26907,-96.84643 z"
+         style="opacity:0.05349791;fill:#ffffff;fill-opacity:1;stroke:none" />
+    </g>
+    <g
+       id="g6239-4-2"
+       inkscape:export-filename="/home/cefleet/Development/games/Teddy/src/assets/rock.png"
+       inkscape:export-xdpi="5.6186323"
+       inkscape:export-ydpi="5.6186323"
+       transform="matrix(-0.10081243,0,0,-0.1133931,278.48687,827.75518)">
+      <path
+         inkscape:connector-curvature="0"
+         id="path6142-1-7"
+         d="M 356.97632,135.14367 160.54064,123.02184 31.79563,288.68686 -4.0406102,448.29096 224.24951,571.52957 431.30334,519.00164 575.97557,333.13357 502.97582,167.46855 z"
+         style="fill:#642e09;fill-opacity:1;stroke:none" />
+      <path
+         sodipodi:nodetypes="ccccccccc"
+         inkscape:connector-curvature="0"
+         id="path6219-8-8-8"
+         d="m 480.38588,178.7179 42.10539,36.87216 51.64085,117.45272 -114.57964,156.84181 -54.16259,32.09864 -8.07173,-21.1806 45.40983,-32.9447 90.57515,-174.19145 z"
+         style="opacity:0.16049386;fill:#000000;fill-opacity:1;stroke:none" />
+      <path
+         sodipodi:nodetypes="ccccccccccc"
+         inkscape:connector-curvature="0"
+         id="path6142-6-0-8"
+         d="m 358.63008,125.69737 -188.58141,11.8933 -63.13482,190.89669 -10.745707,81.59172 124.653127,-43.91957 140.13839,71.08535 32.28836,82.64077 -1.4666,-54.852 141.05793,-178.758 -49.2213,-102.88638 z"
+         style="opacity:0.08230453;fill:#ffffff;fill-opacity:1;stroke:none" />
+      <path
+         sodipodi:nodetypes="ccccccccc"
+         inkscape:connector-curvature="0"
+         id="path6142-5-7-9"
+         d="m 342.39431,145.35441 -175.68246,-4.2934 -22.15383,141.09898 -35.47592,94.98347 189.98056,-47.25571 104.17076,95.0332 L 528.85755,293.2735 486.19736,162.41962 z"
+         style="opacity:0.090535;fill:#ffffff;fill-opacity:1;stroke:none" />
+      <path
+         inkscape:connector-curvature="0"
+         id="path6219-1-0"
+         d="M 123.37713,185.6513 49.050115,278.58533 1.2684624,440.20974 212.3041,557.38744 368.92174,529.10316 375.55808,496.77828 232.21313,516.98133 29.141093,438.18944 z"
+         style="opacity:0.16049386;fill:#000000;fill-opacity:1;stroke:none" />
+      <path
+         sodipodi:nodetypes="ccccccccc"
+         inkscape:connector-curvature="0"
+         id="path6142-5-4-4-6"
+         d="m 347.5599,159.55114 -135.38135,11.95801 -20.98518,87.09153 -18.4024,81.95887 162.34575,-61.52607 61.20925,97.83696 102.16378,-101.50668 -39.26907,-96.84643 z"
+         style="opacity:0.05349791;fill:#ffffff;fill-opacity:1;stroke:none" />
+    </g>
+    <g
+       id="g6239-5-9"
+       inkscape:export-filename="/home/cefleet/Development/games/Teddy/src/assets/rock.png"
+       inkscape:export-xdpi="5.6186323"
+       inkscape:export-ydpi="5.6186323"
+       transform="matrix(0.10895737,0,0,-0.13945779,226.75079,878.72568)">
+      <path
+         inkscape:connector-curvature="0"
+         id="path6142-52-6"
+         d="M 356.97632,135.14367 160.54064,123.02184 31.79563,288.68686 -4.0406102,448.29096 224.24951,571.52957 431.30334,519.00164 575.97557,333.13357 502.97582,167.46855 z"
+         style="fill:#642e09;fill-opacity:1;stroke:none" />
+      <path
+         sodipodi:nodetypes="ccccccccc"
+         inkscape:connector-curvature="0"
+         id="path6219-8-0-6"
+         d="m 480.38588,178.7179 42.10539,36.87216 51.64085,117.45272 -114.57964,156.84181 -54.16259,32.09864 -8.07173,-21.1806 45.40983,-32.9447 90.57515,-174.19145 z"
+         style="opacity:0.16049386;fill:#000000;fill-opacity:1;stroke:none" />
+      <path
+         sodipodi:nodetypes="ccccccccccc"
+         inkscape:connector-curvature="0"
+         id="path6142-6-7-7"
+         d="m 358.63008,125.69737 -188.58141,11.8933 -63.13482,190.89669 -10.745707,81.59172 124.653127,-43.91957 140.13839,71.08535 32.28836,82.64077 -1.4666,-54.852 141.05793,-178.758 -49.2213,-102.88638 z"
+         style="opacity:0.08230453;fill:#ffffff;fill-opacity:1;stroke:none" />
+      <path
+         sodipodi:nodetypes="ccccccccc"
+         inkscape:connector-curvature="0"
+         id="path6142-5-91-2"
+         d="m 342.39431,145.35441 -175.68246,-4.2934 -22.15383,141.09898 -35.47592,94.98347 189.98056,-47.25571 104.17076,95.0332 L 528.85755,293.2735 486.19736,162.41962 z"
+         style="opacity:0.090535;fill:#ffffff;fill-opacity:1;stroke:none" />
+      <path
+         inkscape:connector-curvature="0"
+         id="path6219-2-2"
+         d="M 123.37713,185.6513 49.050115,278.58533 1.2684624,440.20974 212.3041,557.38744 368.92174,529.10316 375.55808,496.77828 232.21313,516.98133 29.141093,438.18944 z"
+         style="opacity:0.16049386;fill:#000000;fill-opacity:1;stroke:none" />
+      <path
+         sodipodi:nodetypes="ccccccccc"
+         inkscape:connector-curvature="0"
+         id="path6142-5-4-14-5"
+         d="m 347.5599,159.55114 -135.38135,11.95801 -20.98518,87.09153 -18.4024,81.95887 162.34575,-61.52607 61.20925,97.83696 102.16378,-101.50668 -39.26907,-96.84643 z"
+         style="opacity:0.05349791;fill:#ffffff;fill-opacity:1;stroke:none" />
+    </g>
+    <g
+       id="g6239-8-2"
+       inkscape:export-filename="/home/cefleet/Development/games/Teddy/src/assets/rock.png"
+       inkscape:export-xdpi="5.6186323"
+       inkscape:export-ydpi="5.6186323"
+       transform="matrix(0,-0.1133931,-0.10081243,0,299.12663,800.31084)">
+      <path
+         inkscape:connector-curvature="0"
+         id="path6142-7-4"
+         d="M 356.97632,135.14367 160.54064,123.02184 31.79563,288.68686 -4.0406102,448.29096 224.24951,571.52957 431.30334,519.00164 575.97557,333.13357 502.97582,167.46855 z"
+         style="fill:#642e09;fill-opacity:1;stroke:none" />
+      <path
+         sodipodi:nodetypes="ccccccccc"
+         inkscape:connector-curvature="0"
+         id="path6219-8-84-7"
+         d="m 480.38588,178.7179 42.10539,36.87216 51.64085,117.45272 -114.57964,156.84181 -54.16259,32.09864 -8.07173,-21.1806 45.40983,-32.9447 90.57515,-174.19145 z"
+         style="opacity:0.16049386;fill:#000000;fill-opacity:1;stroke:none" />
+      <path
+         sodipodi:nodetypes="ccccccccccc"
+         inkscape:connector-curvature="0"
+         id="path6142-6-8-4"
+         d="m 358.63008,125.69737 -188.58141,11.8933 -63.13482,190.89669 -10.745707,81.59172 124.653127,-43.91957 140.13839,71.08535 32.28836,82.64077 -1.4666,-54.852 141.05793,-178.758 -49.2213,-102.88638 z"
+         style="opacity:0.08230453;fill:#ffffff;fill-opacity:1;stroke:none" />
+      <path
+         sodipodi:nodetypes="ccccccccc"
+         inkscape:connector-curvature="0"
+         id="path6142-5-5-9"
+         d="m 342.39431,145.35441 -175.68246,-4.2934 -22.15383,141.09898 -35.47592,94.98347 189.98056,-47.25571 104.17076,95.0332 L 528.85755,293.2735 486.19736,162.41962 z"
+         style="opacity:0.090535;fill:#ffffff;fill-opacity:1;stroke:none" />
+      <path
+         inkscape:connector-curvature="0"
+         id="path6219-5-5"
+         d="M 123.37713,185.6513 49.050115,278.58533 1.2684624,440.20974 212.3041,557.38744 368.92174,529.10316 375.55808,496.77828 232.21313,516.98133 29.141093,438.18944 z"
+         style="opacity:0.16049386;fill:#000000;fill-opacity:1;stroke:none" />
+      <path
+         sodipodi:nodetypes="ccccccccc"
+         inkscape:connector-curvature="0"
+         id="path6142-5-4-15-5"
+         d="m 347.5599,159.55114 -135.38135,11.95801 -20.98518,87.09153 -18.4024,81.95887 162.34575,-61.52607 61.20925,97.83696 102.16378,-101.50668 -39.26907,-96.84643 z"
+         style="opacity:0.05349791;fill:#ffffff;fill-opacity:1;stroke:none" />
+    </g>
+    <g
+       id="g6239-7-7"
+       inkscape:export-filename="/home/cefleet/Development/games/Teddy/src/assets/rock.png"
+       inkscape:export-xdpi="5.6186323"
+       inkscape:export-ydpi="5.6186323"
+       transform="matrix(0,0.1133931,0.10081243,0,206.90353,808.25549)">
+      <path
+         inkscape:connector-curvature="0"
+         id="path6142-3-4"
+         d="M 356.97632,135.14367 160.54064,123.02184 31.79563,288.68686 -4.0406102,448.29096 224.24951,571.52957 431.30334,519.00164 575.97557,333.13357 502.97582,167.46855 z"
+         style="fill:#642e09;fill-opacity:1;stroke:none" />
+      <path
+         sodipodi:nodetypes="ccccccccc"
+         inkscape:connector-curvature="0"
+         id="path6219-8-6-9"
+         d="m 480.38588,178.7179 42.10539,36.87216 51.64085,117.45272 -114.57964,156.84181 -54.16259,32.09864 -8.07173,-21.1806 45.40983,-32.9447 90.57515,-174.19145 z"
+         style="opacity:0.16049386;fill:#000000;fill-opacity:1;stroke:none" />
+      <path
+         sodipodi:nodetypes="ccccccccccc"
+         inkscape:connector-curvature="0"
+         id="path6142-6-74-9"
+         d="m 358.63008,125.69737 -188.58141,11.8933 -63.13482,190.89669 -10.745707,81.59172 124.653127,-43.91957 140.13839,71.08535 32.28836,82.64077 -1.4666,-54.852 141.05793,-178.758 -49.2213,-102.88638 z"
+         style="opacity:0.08230453;fill:#ffffff;fill-opacity:1;stroke:none" />
+      <path
+         sodipodi:nodetypes="ccccccccc"
+         inkscape:connector-curvature="0"
+         id="path6142-5-3-13"
+         d="m 342.39431,145.35441 -175.68246,-4.2934 -22.15383,141.09898 -35.47592,94.98347 189.98056,-47.25571 104.17076,95.0332 L 528.85755,293.2735 486.19736,162.41962 z"
+         style="opacity:0.090535;fill:#ffffff;fill-opacity:1;stroke:none" />
+      <path
+         inkscape:connector-curvature="0"
+         id="path6219-04-8"
+         d="M 123.37713,185.6513 49.050115,278.58533 1.2684624,440.20974 212.3041,557.38744 368.92174,529.10316 375.55808,496.77828 232.21313,516.98133 29.141093,438.18944 z"
+         style="opacity:0.16049386;fill:#000000;fill-opacity:1;stroke:none" />
+      <path
+         sodipodi:nodetypes="ccccccccc"
+         inkscape:connector-curvature="0"
+         id="path6142-5-4-5-5"
+         d="m 347.5599,159.55114 -135.38135,11.95801 -20.98518,87.09153 -18.4024,81.95887 162.34575,-61.52607 61.20925,97.83696 102.16378,-101.50668 -39.26907,-96.84643 z"
+         style="opacity:0.05349791;fill:#ffffff;fill-opacity:1;stroke:none" />
+    </g>
+    <g
+       id="g6239-7-0-0"
+       inkscape:export-filename="/home/cefleet/Development/games/Teddy/src/assets/rock.png"
+       inkscape:export-xdpi="5.6186323"
+       inkscape:export-ydpi="5.6186323"
+       transform="matrix(0,0.04467714,0.03972031,0,245.12641,806.91848)">
+      <path
+         inkscape:connector-curvature="0"
+         id="path6142-3-5-8"
+         d="M 356.97632,135.14367 160.54064,123.02184 31.79563,288.68686 -4.0406102,448.29096 224.24951,571.52957 431.30334,519.00164 575.97557,333.13357 502.97582,167.46855 z"
+         style="fill:#642e09;fill-opacity:1;stroke:none" />
+      <path
+         sodipodi:nodetypes="ccccccccc"
+         inkscape:connector-curvature="0"
+         id="path6219-8-6-0-7"
+         d="m 480.38588,178.7179 42.10539,36.87216 51.64085,117.45272 -114.57964,156.84181 -54.16259,32.09864 -8.07173,-21.1806 45.40983,-32.9447 90.57515,-174.19145 z"
+         style="opacity:0.16049386;fill:#000000;fill-opacity:1;stroke:none" />
+      <path
+         sodipodi:nodetypes="ccccccccccc"
+         inkscape:connector-curvature="0"
+         id="path6142-6-74-5-9"
+         d="m 358.63008,125.69737 -188.58141,11.8933 -63.13482,190.89669 -10.745707,81.59172 124.653127,-43.91957 140.13839,71.08535 32.28836,82.64077 -1.4666,-54.852 141.05793,-178.758 -49.2213,-102.88638 z"
+         style="opacity:0.08230453;fill:#ffffff;fill-opacity:1;stroke:none" />
+      <path
+         sodipodi:nodetypes="ccccccccc"
+         inkscape:connector-curvature="0"
+         id="path6142-5-3-2-68"
+         d="m 342.39431,145.35441 -175.68246,-4.2934 -22.15383,141.09898 -35.47592,94.98347 189.98056,-47.25571 104.17076,95.0332 L 528.85755,293.2735 486.19736,162.41962 z"
+         style="opacity:0.090535;fill:#ffffff;fill-opacity:1;stroke:none" />
+      <path
+         inkscape:connector-curvature="0"
+         id="path6219-04-2-0"
+         d="M 123.37713,185.6513 49.050115,278.58533 1.2684624,440.20974 212.3041,557.38744 368.92174,529.10316 375.55808,496.77828 232.21313,516.98133 29.141093,438.18944 z"
+         style="opacity:0.16049386;fill:#000000;fill-opacity:1;stroke:none" />
+      <path
+         sodipodi:nodetypes="ccccccccc"
+         inkscape:connector-curvature="0"
+         id="path6142-5-4-5-7-8"
+         d="m 347.5599,159.55114 -135.38135,11.95801 -20.98518,87.09153 -18.4024,81.95887 162.34575,-61.52607 61.20925,97.83696 102.16378,-101.50668 -39.26907,-96.84643 z"
+         style="opacity:0.05349791;fill:#ffffff;fill-opacity:1;stroke:none" />
+    </g>
+    <g
+       id="g6239-7-9-4"
+       inkscape:export-filename="/home/cefleet/Development/games/Teddy/src/assets/rock.png"
+       inkscape:export-xdpi="5.6186323"
+       inkscape:export-ydpi="5.6186323"
+       transform="matrix(0,0.08021989,0.07131968,0,221.39742,732.24666)">
+      <path
+         inkscape:connector-curvature="0"
+         id="path6142-3-3-2"
+         d="M 356.97632,135.14367 160.54064,123.02184 31.79563,288.68686 -4.0406102,448.29096 224.24951,571.52957 431.30334,519.00164 575.97557,333.13357 502.97582,167.46855 z"
+         style="fill:#642e09;fill-opacity:1;stroke:none" />
+      <path
+         sodipodi:nodetypes="ccccccccc"
+         inkscape:connector-curvature="0"
+         id="path6219-8-6-8-4"
+         d="m 480.38588,178.7179 42.10539,36.87216 51.64085,117.45272 -114.57964,156.84181 -54.16259,32.09864 -8.07173,-21.1806 45.40983,-32.9447 90.57515,-174.19145 z"
+         style="opacity:0.16049386;fill:#000000;fill-opacity:1;stroke:none" />
+      <path
+         sodipodi:nodetypes="ccccccccccc"
+         inkscape:connector-curvature="0"
+         id="path6142-6-74-2-3"
+         d="m 358.63008,125.69737 -188.58141,11.8933 -63.13482,190.89669 -10.745707,81.59172 124.653127,-43.91957 140.13839,71.08535 32.28836,82.64077 -1.4666,-54.852 141.05793,-178.758 -49.2213,-102.88638 z"
+         style="opacity:0.08230453;fill:#ffffff;fill-opacity:1;stroke:none" />
+      <path
+         sodipodi:nodetypes="ccccccccc"
+         inkscape:connector-curvature="0"
+         id="path6142-5-3-5-9"
+         d="m 342.39431,145.35441 -175.68246,-4.2934 -22.15383,141.09898 -35.47592,94.98347 189.98056,-47.25571 104.17076,95.0332 L 528.85755,293.2735 486.19736,162.41962 z"
+         style="opacity:0.090535;fill:#ffffff;fill-opacity:1;stroke:none" />
+      <path
+         inkscape:connector-curvature="0"
+         id="path6219-04-4-9"
+         d="M 123.37713,185.6513 49.050115,278.58533 1.2684624,440.20974 212.3041,557.38744 368.92174,529.10316 375.55808,496.77828 232.21313,516.98133 29.141093,438.18944 z"
+         style="opacity:0.16049386;fill:#000000;fill-opacity:1;stroke:none" />
+      <path
+         sodipodi:nodetypes="ccccccccc"
+         inkscape:connector-curvature="0"
+         id="path6142-5-4-5-2-7"
+         d="m 347.5599,159.55114 -135.38135,11.95801 -20.98518,87.09153 -18.4024,81.95887 162.34575,-61.52607 61.20925,97.83696 102.16378,-101.50668 -39.26907,-96.84643 z"
+         style="opacity:0.05349791;fill:#ffffff;fill-opacity:1;stroke:none" />
+    </g>
+    <g
+       id="g6239-7-4-6"
+       inkscape:export-filename="/home/cefleet/Development/games/Teddy/src/assets/rock.png"
+       inkscape:export-xdpi="5.6186323"
+       inkscape:export-ydpi="5.6186323"
+       transform="matrix(0,0.06208955,0.05520086,0,245.82449,847.93624)">
+      <path
+         inkscape:connector-curvature="0"
+         id="path6142-3-36-1"
+         d="M 356.97632,135.14367 160.54064,123.02184 31.79563,288.68686 -4.0406102,448.29096 224.24951,571.52957 431.30334,519.00164 575.97557,333.13357 502.97582,167.46855 z"
+         style="fill:#642e09;fill-opacity:1;stroke:none" />
+      <path
+         sodipodi:nodetypes="ccccccccc"
+         inkscape:connector-curvature="0"
+         id="path6219-8-6-2-1"
+         d="m 480.38588,178.7179 42.10539,36.87216 51.64085,117.45272 -114.57964,156.84181 -54.16259,32.09864 -8.07173,-21.1806 45.40983,-32.9447 90.57515,-174.19145 z"
+         style="opacity:0.16049386;fill:#000000;fill-opacity:1;stroke:none" />
+      <path
+         sodipodi:nodetypes="ccccccccccc"
+         inkscape:connector-curvature="0"
+         id="path6142-6-74-0-5"
+         d="m 358.63008,125.69737 -188.58141,11.8933 -63.13482,190.89669 -10.745707,81.59172 124.653127,-43.91957 140.13839,71.08535 32.28836,82.64077 -1.4666,-54.852 141.05793,-178.758 -49.2213,-102.88638 z"
+         style="opacity:0.08230453;fill:#ffffff;fill-opacity:1;stroke:none" />
+      <path
+         sodipodi:nodetypes="ccccccccc"
+         inkscape:connector-curvature="0"
+         id="path6142-5-3-1-8"
+         d="m 342.39431,145.35441 -175.68246,-4.2934 -22.15383,141.09898 -35.47592,94.98347 189.98056,-47.25571 104.17076,95.0332 L 528.85755,293.2735 486.19736,162.41962 z"
+         style="opacity:0.090535;fill:#ffffff;fill-opacity:1;stroke:none" />
+      <path
+         inkscape:connector-curvature="0"
+         id="path6219-04-3-2"
+         d="M 123.37713,185.6513 49.050115,278.58533 1.2684624,440.20974 212.3041,557.38744 368.92174,529.10316 375.55808,496.77828 232.21313,516.98133 29.141093,438.18944 z"
+         style="opacity:0.16049386;fill:#000000;fill-opacity:1;stroke:none" />
+      <path
+         sodipodi:nodetypes="ccccccccc"
+         inkscape:connector-curvature="0"
+         id="path6142-5-4-5-70-2"
+         d="m 347.5599,159.55114 -135.38135,11.95801 -20.98518,87.09153 -18.4024,81.95887 162.34575,-61.52607 61.20925,97.83696 102.16378,-101.50668 -39.26907,-96.84643 z"
+         style="opacity:0.05349791;fill:#ffffff;fill-opacity:1;stroke:none" />
+    </g>
+    <g
+       id="g6239-7-6-3"
+       inkscape:export-filename="/home/cefleet/Development/games/Teddy/src/assets/rock.png"
+       inkscape:export-xdpi="5.6186323"
+       inkscape:export-ydpi="5.6186323"
+       transform="matrix(0,0.06575407,0.05845883,0,243.76601,714.00987)">
+      <path
+         inkscape:connector-curvature="0"
+         id="path6142-3-50-2"
+         d="M 356.97632,135.14367 160.54064,123.02184 31.79563,288.68686 -4.0406102,448.29096 224.24951,571.52957 431.30334,519.00164 575.97557,333.13357 502.97582,167.46855 z"
+         style="fill:#642e09;fill-opacity:1;stroke:none" />
+      <path
+         sodipodi:nodetypes="ccccccccc"
+         inkscape:connector-curvature="0"
+         id="path6219-8-6-28-7"
+         d="m 480.38588,178.7179 42.10539,36.87216 51.64085,117.45272 -114.57964,156.84181 -54.16259,32.09864 -8.07173,-21.1806 45.40983,-32.9447 90.57515,-174.19145 z"
+         style="opacity:0.16049386;fill:#000000;fill-opacity:1;stroke:none" />
+      <path
+         sodipodi:nodetypes="ccccccccccc"
+         inkscape:connector-curvature="0"
+         id="path6142-6-74-06-4"
+         d="m 358.63008,125.69737 -188.58141,11.8933 -63.13482,190.89669 -10.745707,81.59172 124.653127,-43.91957 140.13839,71.08535 32.28836,82.64077 -1.4666,-54.852 141.05793,-178.758 -49.2213,-102.88638 z"
+         style="opacity:0.08230453;fill:#ffffff;fill-opacity:1;stroke:none" />
+      <path
+         sodipodi:nodetypes="ccccccccc"
+         inkscape:connector-curvature="0"
+         id="path6142-5-3-4-1"
+         d="m 342.39431,145.35441 -175.68246,-4.2934 -22.15383,141.09898 -35.47592,94.98347 189.98056,-47.25571 104.17076,95.0332 L 528.85755,293.2735 486.19736,162.41962 z"
+         style="opacity:0.090535;fill:#ffffff;fill-opacity:1;stroke:none" />
+      <path
+         inkscape:connector-curvature="0"
+         id="path6219-04-0-0"
+         d="M 123.37713,185.6513 49.050115,278.58533 1.2684624,440.20974 212.3041,557.38744 368.92174,529.10316 375.55808,496.77828 232.21313,516.98133 29.141093,438.18944 z"
+         style="opacity:0.16049386;fill:#000000;fill-opacity:1;stroke:none" />
+      <path
+         sodipodi:nodetypes="ccccccccc"
+         inkscape:connector-curvature="0"
+         id="path6142-5-4-5-26-7"
+         d="m 347.5599,159.55114 -135.38135,11.95801 -20.98518,87.09153 -18.4024,81.95887 162.34575,-61.52607 61.20925,97.83696 102.16378,-101.50668 -39.26907,-96.84643 z"
+         style="opacity:0.05349791;fill:#ffffff;fill-opacity:1;stroke:none" />
+    </g>
+    <g
+       id="g6239-7-0-8-9"
+       inkscape:export-filename="/home/cefleet/Development/games/Teddy/src/assets/rock.png"
+       inkscape:export-xdpi="5.6186323"
+       inkscape:export-ydpi="5.6186323"
+       transform="matrix(0,0.04467714,0.03972031,0,262.60591,783.27068)">
+      <path
+         inkscape:connector-curvature="0"
+         id="path6142-3-5-4-7"
+         d="M 356.97632,135.14367 160.54064,123.02184 31.79563,288.68686 -4.0406102,448.29096 224.24951,571.52957 431.30334,519.00164 575.97557,333.13357 502.97582,167.46855 z"
+         style="fill:#642e09;fill-opacity:1;stroke:none" />
+      <path
+         sodipodi:nodetypes="ccccccccc"
+         inkscape:connector-curvature="0"
+         id="path6219-8-6-0-0-9"
+         d="m 480.38588,178.7179 42.10539,36.87216 51.64085,117.45272 -114.57964,156.84181 -54.16259,32.09864 -8.07173,-21.1806 45.40983,-32.9447 90.57515,-174.19145 z"
+         style="opacity:0.16049386;fill:#000000;fill-opacity:1;stroke:none" />
+      <path
+         sodipodi:nodetypes="ccccccccccc"
+         inkscape:connector-curvature="0"
+         id="path6142-6-74-5-7-9"
+         d="m 358.63008,125.69737 -188.58141,11.8933 -63.13482,190.89669 -10.745707,81.59172 124.653127,-43.91957 140.13839,71.08535 32.28836,82.64077 -1.4666,-54.852 141.05793,-178.758 -49.2213,-102.88638 z"
+         style="opacity:0.08230453;fill:#ffffff;fill-opacity:1;stroke:none" />
+      <path
+         sodipodi:nodetypes="ccccccccc"
+         inkscape:connector-curvature="0"
+         id="path6142-5-3-2-6-6"
+         d="m 342.39431,145.35441 -175.68246,-4.2934 -22.15383,141.09898 -35.47592,94.98347 189.98056,-47.25571 104.17076,95.0332 L 528.85755,293.2735 486.19736,162.41962 z"
+         style="opacity:0.090535;fill:#ffffff;fill-opacity:1;stroke:none" />
+      <path
+         inkscape:connector-curvature="0"
+         id="path6219-04-2-5-0"
+         d="M 123.37713,185.6513 49.050115,278.58533 1.2684624,440.20974 212.3041,557.38744 368.92174,529.10316 375.55808,496.77828 232.21313,516.98133 29.141093,438.18944 z"
+         style="opacity:0.16049386;fill:#000000;fill-opacity:1;stroke:none" />
+      <path
+         sodipodi:nodetypes="ccccccccc"
+         inkscape:connector-curvature="0"
+         id="path6142-5-4-5-7-6-7"
+         d="m 347.5599,159.55114 -135.38135,11.95801 -20.98518,87.09153 -18.4024,81.95887 162.34575,-61.52607 61.20925,97.83696 102.16378,-101.50668 -39.26907,-96.84643 z"
+         style="opacity:0.05349791;fill:#ffffff;fill-opacity:1;stroke:none" />
+    </g>
+    <rect
+       style="fill:#995300;fill-opacity:1;stroke:none"
+       id="rect6770"
+       width="26.51746"
+       height="215.93527"
+       x="376.41998"
+       y="738.94"
+       ry="1.6071428" />
+    <rect
+       style="opacity:0.15226339;fill:#000000;fill-opacity:1;stroke:none"
+       id="rect6847-2"
+       width="3.0503166"
+       height="215.14151"
+       x="376.44724"
+       y="738.92157"
+       ry="1.7139249" />
+    <rect
+       style="opacity:0.15226339;fill:#000000;fill-opacity:1;stroke:none"
+       id="rect6847"
+       width="3.0503166"
+       height="215.14151"
+       x="399.85172"
+       y="738.91156"
+       ry="1.7139249" />
+    <rect
+       style="fill:#4f2a00;fill-opacity:1;stroke:none"
+       id="rect6770-4"
+       width="26.649099"
+       height="10.573362"
+       x="376.3269"
+       y="950.49695"
+       ry="1.9642857" />
+    <path
+       style="opacity:0.16049386;fill:#ffffff;fill-opacity:1;stroke:none"
+       d="m 380.98028,740.77343 -0.44945,207.33382 c 0,0 1.6214,-16.90004 5.28433,-30.95016 3.19067,-12.23863 -2.13465,-15.5464 0.77387,-66.52394 0.74896,-13.12686 -1.90685,-19.63053 -2.13157,-25.43891 -0.22473,-5.80838 -0.19278,-29.88743 1.15556,-40.99911 1.34835,-11.11168 0.73532,-37.1008 0.73532,-37.1008 l 6.99178,-6.3209 z"
+       id="path6867"
+       inkscape:connector-curvature="0"
+       sodipodi:nodetypes="ccssssccc" />
+    <g
+       transform="matrix(0.88986297,0,0,1,386.70791,-29.55452)"
+       id="g6869-2">
+      <rect
+         ry="1.6071428"
+         y="767.9386"
+         x="17.856241"
+         height="215.93527"
+         width="29.799486"
+         id="rect6770-43"
+         style="fill:#995300;fill-opacity:1;stroke:none" />
+      <rect
+         ry="1.7139249"
+         y="767.92017"
+         x="17.886879"
+         height="215.14151"
+         width="3.4278498"
+         id="rect6847-2-9"
+         style="opacity:0.15226339;fill:#000000;fill-opacity:1;stroke:none" />
+      <rect
+         ry="1.7139249"
+         y="767.91016"
+         x="44.188076"
+         height="215.14151"
+         width="3.4278498"
+         id="rect6847-24"
+         style="opacity:0.15226339;fill:#000000;fill-opacity:1;stroke:none" />
+      <rect
+         ry="1.9642857"
+         y="979.49554"
+         x="17.751644"
+         height="10.573362"
+         width="29.94742"
+         id="rect6770-4-2"
+         style="fill:#4f2a00;fill-opacity:1;stroke:none" />
+      <path
+         sodipodi:nodetypes="ccssssccc"
+         transform="translate(0,752.36217)"
+         inkscape:connector-curvature="0"
+         id="path6867-7"
+         d="M 22.98097,17.409825 22.475894,224.74364 c 0,0 2.150291,-16.80802 5.938364,-30.95016 3.788072,-14.14213 1.627267,-53.39195 0.869652,-66.52394 -0.757614,-13.13198 5,-41.77339 4.747462,-47.58177 -0.252538,-5.80838 -7.3595,-27.744575 -5.844271,-38.856253 1.515229,-11.111678 8.683467,-12.81509 8.683467,-12.81509 l 0,-10.606602 z"
+         style="opacity:0.16049386;fill:#ffffff;fill-opacity:1;stroke:none" />
+    </g>
+    <g
+       transform="matrix(0.88986297,0,0,1,413.4038,-29.55449)"
+       id="g6869-4">
+      <rect
+         ry="1.6071428"
+         y="767.9386"
+         x="17.856241"
+         height="215.93527"
+         width="29.799486"
+         id="rect6770-5"
+         style="fill:#995300;fill-opacity:1;stroke:none" />
+      <rect
+         ry="1.7139249"
+         y="767.92017"
+         x="17.886879"
+         height="215.14151"
+         width="3.4278498"
+         id="rect6847-2-2"
+         style="opacity:0.15226339;fill:#000000;fill-opacity:1;stroke:none" />
+      <rect
+         ry="1.7139249"
+         y="767.91016"
+         x="44.188076"
+         height="215.14151"
+         width="3.4278498"
+         id="rect6847-9"
+         style="opacity:0.15226339;fill:#000000;fill-opacity:1;stroke:none" />
+      <rect
+         ry="1.9642857"
+         y="979.49554"
+         x="17.751644"
+         height="10.573362"
+         width="29.94742"
+         id="rect6770-4-7"
+         style="fill:#4f2a00;fill-opacity:1;stroke:none" />
+      <path
+         sodipodi:nodetypes="ccssssccc"
+         transform="translate(0,752.36217)"
+         inkscape:connector-curvature="0"
+         id="path6867-1"
+         d="M 22.98097,17.409825 22.475894,224.74364 c 0,0 0.0074,-1.80802 3.795507,-15.95016 3.788072,-14.14213 1.627267,-53.39195 0.869652,-66.52394 -0.757614,-13.13198 5.714286,-34.27339 5.461748,-40.08177 -0.252538,-5.80838 -5.573786,-43.101718 -4.058557,-54.213396 1.515229,-11.111678 8.326324,-19.957947 8.326324,-19.957947 l 0,-10.606602 z"
+         style="opacity:0.16049386;fill:#ffffff;fill-opacity:1;stroke:none" />
+    </g>
+    <g
+       transform="matrix(0.88986297,0,0,1,333.95175,-29.911633)"
+       id="g6869-3">
+      <rect
+         ry="1.6071428"
+         y="767.9386"
+         x="17.856241"
+         height="215.93527"
+         width="29.799486"
+         id="rect6770-0"
+         style="fill:#995300;fill-opacity:1;stroke:none" />
+      <rect
+         ry="1.7139249"
+         y="767.92017"
+         x="17.886879"
+         height="215.14151"
+         width="3.4278498"
+         id="rect6847-2-1"
+         style="opacity:0.15226339;fill:#000000;fill-opacity:1;stroke:none" />
+      <rect
+         ry="1.7139249"
+         y="767.91016"
+         x="44.188076"
+         height="215.14151"
+         width="3.4278498"
+         id="rect6847-1"
+         style="opacity:0.15226339;fill:#000000;fill-opacity:1;stroke:none" />
+      <rect
+         ry="1.9642857"
+         y="979.49554"
+         x="17.751644"
+         height="10.573362"
+         width="29.94742"
+         id="rect6770-4-1"
+         style="fill:#4f2a00;fill-opacity:1;stroke:none" />
+      <path
+         sodipodi:nodetypes="ccssssccc"
+         transform="translate(0,752.36217)"
+         inkscape:connector-curvature="0"
+         id="path6867-8"
+         d="M 22.98097,17.409825 22.475894,224.74364 c 0,0 2.150291,-16.80802 5.938364,-30.95016 3.788072,-14.14213 -3.01559,-43.74909 -3.773205,-56.88108 -0.757614,-13.13198 1.785714,-42.130536 1.533176,-47.938916 -0.252538,-5.80838 5.1405,-25.601718 6.655729,-36.713396 1.515229,-11.111678 4.04061,-24.243661 4.04061,-24.243661 l 0,-10.606602 z"
+         style="opacity:0.16049386;fill:#ffffff;fill-opacity:1;stroke:none" />
+    </g>
+    <rect
+       style="fill:#002aff;fill-opacity:1;stroke:none"
+       id="rect7067"
+       width="22.383585"
+       height="12.767813"
+       x="9.0242958"
+       y="968.90845"
+       ry="1.8390791" />
+    <path
+       style="fill:#b1b1b1;fill-opacity:1;stroke:none"
+       d="m 11.564119,859.40326 18.051022,0 3.531722,26.2406 -6.10689,17.82247 -13.208093,0.0518 -6.1918951,-18.12414 z"
+       id="rect6968"
+       inkscape:connector-curvature="0"
+       sodipodi:nodetypes="ccccccc" />
+    <path
+       style="opacity:0.30864198;fill:#ffffff;fill-opacity:1;stroke:none"
+       d="m 15.251184,883.6879 14.590237,-0.26736 -15.027929,-3.41791 -2.291477,-6.80059 0.196984,-5.35812 0.321086,-7.2543 -4.0146916,23.23912 z"
+       id="rect6968-2-4"
+       inkscape:connector-curvature="0"
+       sodipodi:nodetypes="cccccccc" />
+    <rect
+       style="fill:#b1b1b1;fill-opacity:1;stroke:none"
+       id="rect6971"
+       width="13.251002"
+       height="59.286129"
+       x="13.889065"
+       y="903.2467" />
+    <path
+       style="fill:#002aff;fill-opacity:1;stroke:none"
+       d="m 2.8373134,961.70526 33.4955866,0 2.024459,1.83908 0,4.34691 -2.024459,1.83908 -33.4955866,0 -2.02445899,-1.83908 0,-4.34691 z"
+       id="rect6973"
+       inkscape:connector-curvature="0"
+       sodipodi:nodetypes="ccccccccc" />
+    <path
+       style="fill:#002aff;fill-opacity:1;stroke:none"
+       d="m 8.9480373,977.19925 22.5361077,0 8.024747,7.38914 0,55.65041 -8.024747,7.3891 -22.5361077,0 -8.02474742,-7.3891 0,-55.65041 z"
+       id="rect6973-3"
+       inkscape:connector-curvature="0"
+       sodipodi:nodetypes="ccccccccc" />
+    <path
+       style="opacity:0.30041151;fill:#000000;fill-opacity:1;stroke:none"
+       d="m 28.894997,963.20997 0,6.01881 -2.576583,3.34378 -0.368083,5.01567 1.840417,8.02507 0.736167,51.1599 -2.576584,8.6938 -2.576585,0 0.736167,-79.91638 z"
+       id="path7087-8"
+       inkscape:connector-curvature="0" />
+    <path
+       style="opacity:0.30041151;fill:#000000;fill-opacity:1;stroke:none"
+       d="m 10.490828,962.7084 0,6.01881 2.576583,3.34378 0.368083,5.01567 -1.840417,8.02507 -0.736167,51.15987 2.576584,8.6938 2.576585,0 -0.736167,-79.91635 z"
+       id="path7087"
+       inkscape:connector-curvature="0" />
+    <path
+       style="fill:#4a66ff;fill-opacity:1;stroke:none"
+       d="m 17.048556,962.1244 5.814519,0 2.070458,8.77229 0,66.06741 -2.070458,8.7723 -5.814519,0 -2.070457,-8.7723 0,-66.06741 z"
+       id="rect6973-3-4"
+       inkscape:connector-curvature="0"
+       sodipodi:nodetypes="ccccccccc" />
+    <path
+       style="fill:#4a66ff;fill-opacity:1;stroke:none"
+       d="m 35.041421,981.04142 3.989783,3.36929 -0.303136,3.42895 0,48.08404 -0.217413,4.4337 -4.989493,4.96 -0.844414,-9.3937 0,-48.08404 z"
+       id="rect6973-3-4-5"
+       inkscape:connector-curvature="0"
+       sodipodi:nodetypes="ccccccccc" />
+    <path
+       style="fill:#4a66ff;fill-opacity:1;stroke:none"
+       d="m 33.772866,961.90998 3.078259,0 1.09612,0.82034 0,6.17839 -1.09612,0.82034 -3.078259,0 -1.096118,-0.82034 0,-6.17839 z"
+       id="rect6973-3-4-5-0"
+       inkscape:connector-curvature="0"
+       sodipodi:nodetypes="ccccccccc" />
+    <path
+       style="fill:#4a66ff;fill-opacity:1;stroke:none"
+       d="m 6.1930107,980.27559 -3.9897822,3.36928 0.3031361,3.42896 0,48.08397 0.2174121,4.4338 4.9894936,4.96 0.8444135,-9.3938 0,-48.08397 z"
+       id="rect6973-3-4-5-1"
+       inkscape:connector-curvature="0"
+       sodipodi:nodetypes="ccccccccc" />
+    <path
+       style="fill:#4a66ff;fill-opacity:1;stroke:none"
+       d="m 2.6003985,962.07804 3.0782591,0 1.0961199,0.78527 0,5.91417 -1.0961199,0.78525 -3.0782591,0 -1.0961178,-0.78525 0,-5.91417 z"
+       id="rect6973-3-4-5-0-8"
+       inkscape:connector-curvature="0"
+       sodipodi:nodetypes="ccccccccc" />
+    <path
+       style="opacity:0.39094651;fill:#ffffff;fill-opacity:1;stroke:none"
+       d="m 14.539744,903.00107 3.680835,0 -1.874238,2.85475 -0.207956,9.98858 0.780822,19.82939 2.398062,20.10418 4.666338,5.70514 -9.443863,-0.0286 z"
+       id="rect6971-0"
+       inkscape:connector-curvature="0"
+       sodipodi:nodetypes="ccccccccc" />
+    <path
+       style="opacity:0.21810704;fill:#000000;fill-opacity:1;stroke:none"
+       d="m 26.483878,961.50608 -1.753392,0 0.892807,-2.85475 0.09906,-9.98858 -0.37195,-19.8294 -1.142334,-20.10418 -2.222843,-5.70513 4.498651,0.0286 z"
+       id="rect6971-0-3"
+       inkscape:connector-curvature="0"
+       sodipodi:nodetypes="ccccccccc" />
+    <path
+       style="opacity:0.18518521;fill:#000000;fill-opacity:1;stroke:none"
+       d="m 22.204562,890.84992 9.096448,-5.7928 -2.274489,7.10747 -5.135698,8.91943 -6.54615,0.0261 -5.191933,-9.07185 z"
+       id="rect6968-2"
+       inkscape:connector-curvature="0"
+       sodipodi:nodetypes="ccccccc" />
+  </g>
+</svg>
