@@ -43,13 +43,13 @@ Teddy.Level.call(this,game,'Level1',
 			name : 'sandboxTrap',
 			x : 1200,
 			y : 1390,
-			key : ''
+			key : 'v'
 		},
 		{
 			name : 'catdoorTrap',
 			x : 2155,
 			y : 250,
-			key : ''
+			key : 'b'
 		},
 		{
 			name : 'dirt',
@@ -78,7 +78,19 @@ Teddy.Level.call(this,game,'Level1',
 			y:1623,
 			key : 'dirt',
 			frame :0
-		}	
+		},
+		{
+			name : 'windowTrigger',
+			x : 1270,
+			y : 480,
+			key :'boum'
+		},
+		{
+			name : 'workbenchTrigger',
+			x : 860,
+			y : 300,
+			key:'boom'
+		}		
 	],
 	items : [
 		{
@@ -115,8 +127,8 @@ Teddy.Level.call(this,game,'Level1',
 		},
 		{
 			name : 'screwdriver',
-			x: 800,
-			y : 140,
+			x: 900,
+			y : 240,
 			key : 'screwdriver'
 		}		
 	],
@@ -139,7 +151,7 @@ Teddy.Level.call(this,game,'Level1',
 		},
 		{
 			name : 'dumptruck',
-			x : 1864,
+			x : 2300,
 			y:1380,
 			key : 'dumptruck'
 		}
@@ -221,6 +233,12 @@ Teddy.Levels.Level1.prototype.constructor = Teddy.Levels.Level1;
 
 //Initilizes them Level
 Teddy.Levels.Level1.prototype._init = function(){
+	this.TutControlDone = false;
+	this.TutActionDone = false;
+	
+	//this.music = game.add.audio('gameMusic',1,true);
+	//this.music.play('',0,.8,true);
+		    
 	//this is just teaking the items added
 	this.triggers.dirt.bringToTop();
 
@@ -231,7 +249,7 @@ Teddy.Levels.Level1.prototype._init = function(){
 	this.triggers.swing.bringToTop();
 	this.sprites.treeTop.bringToTop();
 	//shoud have an autoadd for this
-	game.add.advDBox(10,10,'dbpg');
+	game.add.advDBox(10,10,'dialogueBox');
 	
 	this._initPlayer();
 	this._initDog();
@@ -242,27 +260,125 @@ Teddy.Levels.Level1.prototype._init = function(){
 	this._initSandboxTrap();
 	this._initCatdoorTrap();
 	this._initDirt();
+	this._initRock();
+	this._initWindowTrigger();
+	this._initWorkbenchTrigger();
+	
 	var decoys = [this.triggers.dirtDecoy1,this.triggers.dirtDecoy2,this.triggers.dirtDecoy3];
 	for(var i = 0; i < decoys.length; i++){
 		this._initDecoy(decoys[i]);
 	}
+	
+	//this.game.adv.dialogueBox.show('');
+	//pause movement for a bit
+	var t = " CONTROLS :\n Arrow Left - Move Left  \n Arrow Up - Move Up \n Arrow Right - Move Right \n Arrow Down - Move Down \n Spacebar - All Actions \n (Inspect Location, Pickup Item,\n Drop Item,  Talk , Interact) \n Esc - Menu";
+	this.guideText = game.add.text(720, 470, t, {
+        font: "16px Arial",
+        fill: "#4343C9",
+        align :'left'
+    });
+        
+    this.guideText.fixedToCamera = true;
+}
+
+Teddy.Levels.Level1.prototype._initRock = function(d){
+	var rock = this.items.rock;
+	
+	
+	//clippers are on the person until the rock is thrown
+	
+}
+Teddy.Levels.Level1.prototype._initWorkbenchTrigger = function(){
+	var wbt = this.triggers.workbenchTrigger;
+	wbt.width = 150;
+	wbt.height = 160;
+	//wbt.touchInteraction = true; 
+	wbt.interactDistance = 120;
+	wbt.addAction(function(){
+		if(this.game.adv.player.item){
+			if(this.game.adv.player.item.name === 'branch'){
+				
+				//TODO animations
+				this.game.adv.activeLevel.items.screwdriver.x -= 100;
+				this.game.adv.activeLevel.items.screwdriver.y += 20;
+				//TODO kill the trigger
+				//this.destroy();
+			}
+		} else {
+			this.game.adv.dialogueBox.show("Look the screwdriver is up there. \n I just need something to knock it down...");
+		}
+	});
+}
+
+Teddy.Levels.Level1.prototype._initWindowTrigger = function(){
+	var wt = this.triggers.windowTrigger;
+	
+	//crack is gone until the rock is thrown
+	this.sprites.crack.oldx  = this.sprites.crack.x;
+	this.sprites.crack.oldy = this.sprites.crack.y;	
+	this.sprites.crack.x = -300;
+	this.sprites.crack.y = -300;
+	
+	wt.cracked = false;
+	wt.width = 220;
+	wt.height = 100;
+	//wt.touchInteraction = true;
+	wt.addAction(function(){
+		if(this.game.adv.player.item){
+			if(this.game.adv.player.item.name === 'rock'){
+				this.cracked = true;
+				
+				//tween rock then make dissapear
+				this.game.adv.player.item = null;
+
+				this.game.adv.activeLevel.items.rock.x= -500;
+				this.game.adv.activeLevel.sprites.crack.x = this.game.adv.activeLevel.sprites.crack.oldx;
+				this.game.adv.activeLevel.sprites.crack.y = this.game.adv.activeLevel.sprites.crack.oldy;
+				this.game.adv.activeLevel.npcs.gardener.hasClippers = false; // drops them.
+				this.game.adv.dialogueBox.show("What was that noise? I'd better go inside and check it out");
+				this.game.adv.activeLevel.npcs.gardener.destroy(); //patrol
+			}
+		} else {
+			if(!this.cracked){
+				this.game.adv.dialogueBox.show('I wish I was tall enough to see inside this window');
+			}
+		}
+	});
+	
 }
 
 Teddy.Levels.Level1.prototype._initCatdoorTrap = function(d){
 	var cd = this.triggers.catdoorTrap;
 	cd.height = 300;
-	cd.width = 300;
+	cd.width = 100;
 	cd.body.imovable = true;
 	cd.body.moves = false;
+	cd.interactDistance = 180;
+	//cd.touchInteraction = true;
 	
 	cd._update = cd.update;
 	cd.update = function(){
+		cd._update();
 		game.physics.arcade.collide( this.game.adv.player, this);
 	}
-},
+	
+	cd.addAction(function(){
+		if(this.game.adv.player.item){
+			if(this.game.adv.player.item.name === 'screwdriver'){
+				this.x = -500;
+				this.y = - 300; 
+			} else {
+				this.game.adv.dialogueBox.show('Well... this '+this.game.adv.player.item.name+' does nothing here');
+			}
+		} else {
+			this.game.adv.dialogueBox.show('The catdoor is stuck! ');
+			this.game.adv.activeLevel.npcs.dumptruck.onConversation = 'second';
+		}
+	});
+}
 
 Teddy.Levels.Level1.prototype._initDecoy = function(d){
-	d.touchInteraction = true;
+	//d.touchInteraction = true;
 	d.addAction(function(){
 		if(this.game.adv.player.item){
 			if(this.game.adv.player.item.name === 'shovel'){
@@ -278,15 +394,16 @@ Teddy.Levels.Level1.prototype._initDecoy = function(d){
 }
 
 Teddy.Levels.Level1.prototype._initDirt = function(){
-	var dirt = 	this.triggers.dirt;
-	dirt.touchInteraction = true;
+	var dirt = this.triggers.dirt;
+	//dirt.touchInteraction = true;
 	dirt.addAction(function(){
 		if(this.game.adv.player.item){
-			if(this.game.adv.player.item.name === 'shovel'){
+			if(this.game.adv.player.item.name === 'shovel' && !this.dugUp){
 				this.frame = 1;
 				this.game.adv.activeLevel.items.bone.uncovered = true;
 				this.game.adv.activeLevel.items.bone.bringToTop();
 				this.dugUp = true;
+				this.game.adv.activeLevel.items.bone.x += 80;
 			}
 		} else {
 			if(!this.dugUp){
@@ -308,7 +425,7 @@ Teddy.Levels.Level1.prototype._initBone = function(){
 
 Teddy.Levels.Level1.prototype._initSwing = function(){
 	var swing = this.triggers.swing;
-	swing.touchInteraction = true;
+	//swing.touchInteraction = true;
 	swing.interactDistance = 200;
 	
 	swing.addAction(function(){
@@ -388,6 +505,9 @@ Teddy.Levels.Level1.prototype._initPlayer = function(){
 					break;
 				}
 			}
+			
+			this.TutInControls = false;
+			
 		}
 		if(this.stopAnim){
 			this.animations.stop();
@@ -412,6 +532,7 @@ Teddy.Levels.Level1.prototype._initDog = function(){
 			this.x = x;
 			this.y = y;
 		}
+		
 	}
 	
 	//modifies the update 
@@ -423,6 +544,7 @@ Teddy.Levels.Level1.prototype._initDog = function(){
 			if(dist < 600){
 				game.physics.arcade.moveToObject(this, this.game.adv.activeLevel.items.bone, this.speed);
 				console.log('Give me the bone, give me the bone');
+				this.game.adv.dialogueBox.show('Rough rouogh .. bark batr bark.. bone?');
 				if(dist < 60){
 					this.hasBone = true;
 				}
@@ -442,15 +564,20 @@ Teddy.Levels.Level1.prototype._initDog = function(){
 			} else {
 				this.body.velocity.y = 0;
 				this.body.velocity.x = 0;
-			}
-			
+			}			
 		}
 	}
 	
 	//intraction variables
 	this.npcs.dog.addInteraction(function(){
-		this.game.adv.dialogueBox.show("I've Got you now...and your pretty little face too");
-		this.game.adv.player.caught = true;
+		if(!this.hasBone && this.game.adv.player.item.name !== 'bone'){
+			this.game.adv.dialogueBox.show("I've Got you now...and your pretty little face too");
+			this.game.adv.player.caught = true;
+		} if (!this.hasBone  && this.game.adv.player.item.name === 'bone'){
+			this.hasBone = true;
+			this.game.adv.dialogueBox.show("Your'e my best friend now!");
+			this.game.adv.player.item = null;
+		}
 	});
 	this.npcs.dog.touchInteraction = true;
 }
@@ -463,20 +590,87 @@ Teddy.Levels.Level1.prototype._initGardner = function(){
 	this.npcs.gardener.startPatrol();
 	//this.npcs.gardener.vision.width = 300,
 	//this.npcs.gardener.vision.height = 400;
+	this.npcs.gardener.hasClippers =true;
 	this.npcs.gardener.addWhenSeePlayerAction(function(){
 		this.game.adv.dialogueBox.show('Yeah I see ya there. \n What do you want me to do about it???');
 		this.game.adv.player.caught = true;
 	});
+	
+	this.npcs.gardener._update = this.npcs.gardener.update;
+	this.npcs.gardener.update = function(){
+		this._update();
+		if(this.hasClippers){
+			this.game.adv.activeLevel.items.trimmers.x = this.x;
+			this.game.adv.activeLevel.items.trimmers.y = this.y;
+		}
+	}
 }
 
 Teddy.Levels.Level1.prototype._initDumptruck = function(){
 	var dt = this.npcs.dumptruck;
-	dt.hadConvo = false;
 	dt.interactDistance = 120;
+	dt.conversations = {
+		first : [
+			'How in the world are you doing that?', 
+			"Doing what?", 
+			"Walking of course! \n",
+			"We've ALWAYS been able to talk to eachother, \nbut none of us toys have ever been able to \n  move on our own.", 
+			"Well MY boy NEEDS me! \n I think ... I think, maybe... \nI was just able to wish for it enough to come true!", 
+			"Well that's amazing ... and yet also horrifying.",
+			"Why is it horrifing?",
+			"I've seen enough scary movies about walking toys \nto know that that ain't natural.", 
+			"Whatever, I MUST to get back into the house, \nbut this is my first time being out here. \nI don't know what to do. Can you help me?",
+			"Well the house is just up that way, \n you can't miss it.",
+			"However the door is right inside the garden \nand the man is gardening.",
+			" I doubt you'd be able to keep on moving if he \nsees you walking around.",
+			"What makes you think that?",
+			"Well i've seen enough cartoons \nto know this type of thing.",
+			"You watch a lot of TV to be an outside toy...",
+			"Yeah well, you'll have that. \nAnyway the door is probably too for you\n to heavy to open by yourself,",
+			"but you'd probably be able to \nget through the cat door.",
+			"Thanks, I'll try that first.", 
+			"Come back to me if you have any problems ... \nand remember don't let the man see you."
+			],
+			refirst : [
+				"Try to get into the cat door, \nand remember don't let the man see you."
+			],
+		second : [
+			"I'm guesing it didn't go as planned.",
+			"The cat door was stuck. \nI tried to push it but my paws are too soft.",
+			"Hmm... sounds like you need a \nscrewdriver to pry it open.",
+			"There is one on the workbench by the house, \nbut it is guarded by that crazy dog.",
+			"You'll probably need to find something \nto distract the dog.",
+			"Well what do you suggest?",
+			"I don't know. \nYoull probably have to come up with an \nelaborate plan with waaaaay to many steps.",
+			"Huh?.. What..",
+			"DID STUTTER...? No really did I?\n I stutter sometimes and I don't realize it. ",
+			"No you didn't stutter... I just don't understand.",
+			"Ok Pedro.. Can I call you Pedro? \n Just look around the yard. Check everything \n you can see. I'm sure you'll figure it out.",
+			"Anyway that's all I can help you with.\nI'm gonna take a nap. So leave me alone.",
+			"But....",
+			"ZZZZZZZZZZZZZ --ZZZZZZZZZZZZ--",
+			"mumble ZZZ lay some of the mmZZotZZZ oil \non me  you little jaguar you..ZZZZ",
+			"Ok well I guess I'm on my own then.\n I guess I should explore the yard."
+		]
+	};
+	
+	dt.onConversation = 'first'; 
 	dt.addInteraction(function(){
 		//pauseplayer movment on this one
-	
-		this.game.adv.dialogueBox.show('How in the world are you doing that?');
 		
+			this.game.adv.dialogueBox.show(dt.conversations[dt.onConversation]);
+			if(dt.onConversation === 'first'){
+				dt.onConversation = 'refirst';
+			}
 	});
+	 
+	dt.body.imovable = true;
+	dt.body.moves = false;
+	
+	
+	dt._update = dt.update;
+	dt.update  = function(){
+		this._update();
+		game.physics.arcade.collide( this.game.adv.player, this);
+	}
 }

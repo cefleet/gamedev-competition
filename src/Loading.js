@@ -6,6 +6,13 @@ Loading.prototype = {
 			this.preloadBar = game.add.sprite(180, 300, 'preload');
 			game.load.setPreloadSprite(this.preloadBar, 0);
 		*/
+		game.load.audio('introMusic','assets/DeserveToBeLoved.ogg');
+		game.load.audio('gameMusic','assets/Surreptitious.mp3');
+		game.load.audio('cutsceneMusic','assets/Faith.ogg');
+		
+		game.load.image('title', 'assets/TitleScreen1.png');
+		game.load.image('intro', 'assets/introImage.png');
+		game.load.spritesheet('blink','assets/blink1.png', 106,68);
 		
 		game.load.tilemap('level1', 'assets/level1z.json', null, Phaser.Tilemap.TILED_JSON); // loading the tilemap 
 		game.load.image('testTiles', 'assets/testTiles_green1.png'); // loading the tileset image
@@ -18,7 +25,7 @@ Loading.prototype = {
 		game.load.image('doghouse','assets/doghouse2.png');
 		game.load.image('dumptruck','assets/dumptruck1.png');
 		game.load.spritesheet('swing','assets/swing2.png',190,350);
-		game.load.spritesheet('trimmers', 'assets/trimmers1.png',70,111);
+		game.load.spritesheet('trimmers', 'assets/trimmers3.png',43,68);
 		game.load.spritesheet('dirt','assets/dirt1.png',120,60);//120,60
 		game.load.image('bone', 'assets/bone3.png');
 		game.load.image('shovel','assets/shovel2.png');
@@ -31,6 +38,7 @@ Loading.prototype = {
 		game.load.image('workbench','assets/workbench2.png');
 		game.load.image('screwdriver','assets/screwdriver.png');
 		game.load.image('crack', 'assets/crack.png');
+		game.load.image('dialogueBox', 'assets/dialogBox1.png');
 		
 		game.plugins.add(new Phaser.Plugin.Adventurer(game));
             
