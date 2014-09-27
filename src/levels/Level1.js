@@ -43,13 +43,13 @@ Teddy.Level.call(this,game,'Level1',
 			name : 'sandboxTrap',
 			x : 1200,
 			y : 1390,
-			key : 'v'
+			key : ''
 		},
 		{
 			name : 'catdoorTrap',
 			x : 2155,
 			y : 250,
-			key : 'b'
+			key : ''
 		},
 		{
 			name : 'dirt',
@@ -83,7 +83,7 @@ Teddy.Level.call(this,game,'Level1',
 			name : 'windowTrigger',
 			x : 1270,
 			y : 480,
-			key :'boum'
+			key :''
 		},
 		{
 			name : 'workbenchTrigger',
