@@ -1,70 +1,107 @@
-var Main = function(){};
-Main.prototype = {
-	create : function(){
+var End = function(){};
+End.prototype = {
+	create : function(){			
+		this.cmusic = game.add.audio('cutsceneMusic',1,true);
+		this.cmusic.play('',0,.8,true);
 		
-
-		var start = function(){			
-			//stop music then start
-			var mT = game.add.tween(this.cmusic).to({volume:0}, 2000);
-			var s = this.game.add.tween(this.spr_bg);		
-			s.to({ alpha: 1 }, 2000, null);
-			mT.onComplete.add(function(){
-				game.state.start('Game',true);
-			});
-			s.start();
-			mT.start();
-		}
+		this.e4 = game.add.sprite(0,0,'end4');
+		this.e3 = game.add.sprite(0,0,'end3');
+		this.e2 = game.add.sprite(0,0,'end2');
+		this.e1 = game.add.sprite(0,0,'end1');
 		
-		var esc = game.input.keyboard.addKey(Phaser.Keyboard.ESC);
-		esc.onDown.add(start, this);
+		this.e1.scale.setTo(1.2,1.2);
+		this.e1.x = -200;
+		this.e1.y = 0;
 		
-		this.music = game.add.audio('introMusic',1,true);
-		this.music.play('',0,.4,true);
-		
-		game.add.sprite(0,0,'title');
-		
-		
-		
-		var startButton = game.add.button(100,366,'',this.fadeOut, this);
-		startButton.width = 250;
-		startButton.height = 90;
-
-		
-		//DO NOT DELETE ABOVE IT IS IMPORTANT
-		
-
-		//game.state.start('Game',true); //comment or delete this allow title and intro
-	},
-	
-	fadeOut : function(){
 		this.spr_bg = this.game.add.graphics(0, 0);
 		this.spr_bg.beginFill('#000000', 1);
 		this.spr_bg.drawRect(0, 0, this.game.width, this.game.height);
-		this.spr_bg.alpha = 0;
+		this.spr_bg.alpha = 1;
 		this.spr_bg.endFill();
 
 		this.s = this.game.add.tween(this.spr_bg);
-		this.s.to({ alpha: 1 }, 1200, null);
+		this.s.to({ alpha: 0 }, 1200, null);
 		this.s.onComplete.add(function(){
-			this.music.stop();
-			this.fadeIn();
-		}, this);
-		this.s.start();					
-		game.add.tween(this.music).to({volume:0}, 1200).start();
+			this.firstSlide();
+		},this);
+		
+		this.s.start();
+	},
+	
+	firstSlide  : function(){
+		var	l = game.add.tween(this.e1).to({x:-100,y:-80},10000);
+		var s = game.add.tween(this.e1.scale).to({x: 1, y:1},10000);
+		l.onComplete.add(function(){
+			this.secondSlide();
+		},this);
+		s.start();
+		l.start();
+	},
+	
+	secondSlide : function(){
+		this.e2.scale.setTo(1.4,1.4);
+		this.e1.destroy();		
+		var	l = game.add.tween(this.e2).to({x:-100,y : -250},9000);
+		l.onComplete.add(function(){
+			this.thirdSlide();
+		},this);
+		l.start();
+	},
+	
+	thirdSlide : function(){
+		this.e3.scale.setTo(2.5,2.5);
+		this.e2.destroy();
+		this.e3.x = -800;
+		this.e3.y = -900;
+		var	l = game.add.tween(this.e3).to({y : -160, x : -50},17000);
+		var s = game.add.tween(this.e3.scale).to({y : 1,x:1},17000);
+		l.onComplete.add(function(){
+			this.forthSlide();
+		},this);
+		l.start();
+		s.start();
+	},
+	
+	forthSlide : function(){
+	//	this.e3.destroy();
+			var s = this.game.add.tween(this.spr_bg);
+			s.to({ alpha: 1 }, 1200, null);
+			s.onComplete.add(function(){
+				this.forthplusSlide();
+			},this);
+			s.start();
+	},
+	
+	forthplusSlide : function(){
+		game.time.events.add(Phaser.Timer.SECOND * 5, this.fithSlide, this);
+	},
+	
+	fithSlide : function(){
+		this.e3.destroy();
+		var s = this.game.add.tween(this.spr_bg);
+		s.to({ alpha: 0 }, 2500, null);
+		s.onComplete.add(function(){
+			game.time.events.add(Phaser.Timer.SECOND * 9, this.sixthSlide, this);
+		},this);
+		s.start();
+	},
+	
+	sixthSlide : function(){
+		var s = this.game.add.tween(this.spr_bg);
+		s.to({alpha:1},2500,null);
+		s.onComplete.add(function(){
+			this.cmusic.stop('',0,.8,true);
+			game.state.start('Home',true);
+		},this);
+		s.start();
 	},
 	
 	fadeIn : function() {		
 		this.cmusic = game.add.audio('cutsceneMusic',1,true);
 		this.cmusic.play('',0,.8,true);
+				
 		
-		this.introImg = game.add.sprite(-3500,-620,'intro');
-		this.introImg.scale.setTo(2.4,2.4);
-		game.world.bringToTop(this.spr_bg);
-		var s = this.game.add.tween(this.spr_bg);
-		game.add.text(10, 610,'[ESC to Skip]' , {
-				font: "12px Georgia",
-				fill: "#ffffff"
-			});
+		
 		s.to({ alpha: 0 }, 5000, null);
 		s.onComplete.add(function(){
 			this.tween();

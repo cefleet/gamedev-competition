@@ -135,11 +135,11 @@ Teddy.Level.call(this,game,'Level1',
 	npcs : [
 		{
 			name : 'gardener',
-			x : 2000,
-			y:800,
+			x : 2080,
+			y:930,
 			key : 'person',
 			speed : 70,
-			patrol : [[2200,800],[2500,900], [2600,700], [2400,600],[2200,650],[2000,800]]
+			patrol : [[2500,930],[2700,930], [2700,560],[2360,560],[2360,930],[2080,930]]
 		},
 		{
 			name : 'dog',
@@ -152,7 +152,7 @@ Teddy.Level.call(this,game,'Level1',
 		{
 			name : 'dumptruck',
 			x : 2300,
-			y:1380,
+			y:1670,
 			key : 'dumptruck'
 		}
 	],
@@ -172,7 +172,7 @@ Teddy.Level.call(this,game,'Level1',
 		{
 			name : 'doghouse',
 			x:480,
-			y:480,
+			y:560,
 			key:'doghouse'
 		},
 		{
@@ -221,8 +221,13 @@ Teddy.Level.call(this,game,'Level1',
 			name : 'crack',
 			x: 1200,
 			y : 140,
-			key : 'crack'
-		
+			key : 'crack'		
+		},
+		{
+			name : 'catdoor',
+			x:2107,
+			y : 310,
+			key : 'catdoor'
 		}
 	]
 })
@@ -233,11 +238,9 @@ Teddy.Levels.Level1.prototype.constructor = Teddy.Levels.Level1;
 
 //Initilizes them Level
 Teddy.Levels.Level1.prototype._init = function(){
-	this.TutControlDone = false;
-	this.TutActionDone = false;
 	
-	//this.music = game.add.audio('gameMusic',1,true);
-	//this.music.play('',0,.8,true);
+	this.music = game.add.audio('gameMusic',1,true);
+	this.music.play('',0,.8,true);
 		    
 	//this is just teaking the items added
 	this.triggers.dirt.bringToTop();
@@ -263,6 +266,10 @@ Teddy.Levels.Level1.prototype._init = function(){
 	this._initRock();
 	this._initWindowTrigger();
 	this._initWorkbenchTrigger();
+	this._initTrimmers();
+	this._initShovel();
+	this._initBranch();
+	this._initScrewdriver();
 	
 	var decoys = [this.triggers.dirtDecoy1,this.triggers.dirtDecoy2,this.triggers.dirtDecoy3];
 	for(var i = 0; i < decoys.length; i++){
@@ -279,15 +286,101 @@ Teddy.Levels.Level1.prototype._init = function(){
     });
         
     this.guideText.fixedToCamera = true;
+    
+}
+
+Teddy.Levels.Level1.prototype._initScrewdriver = function(){
+	
+	var sd = this.items.screwdriver;
+	
+	sd.held.left.position[1] = -20;	
+	
+	sd.held.right.position[1] = -20;	
+	sd.held.right.rotation = 0;
+	
+	sd.held.down.rotation = 0;
+	sd.held.down.position[1] = -10;	
+	
+	sd.held.up.rotation = 0;
+	sd.held.up.position[1] = -40;	
+
+}
+
+
+Teddy.Levels.Level1.prototype._initBranch = function(){
+	
+	var branch = this.items.branch;
+	branch.held.left.position[0]= -20;
+	branch.held.left.position[1] = -20;	
+	branch.held.left.rotation = 90;
+	
+	branch.held.right.position[0] = 24;
+	branch.held.right.position[1] = -20;	
+	branch.held.right.rotation = 90;
+	
+	branch.held.down.rotation = 90;
+	branch.held.down.position[1] = -24;
+	branch.held.down.position[0] = 0;
+	
+	branch.held.up.rotation = 90;
+	branch.held.up.position[1] = -40;	
+	
+}
+
+Teddy.Levels.Level1.prototype._initShovel = function(){
+	
+	var shovel = this.items.shovel;
+	shovel.held.left.position[0]= -20;
+	shovel.held.right.position[0] = 26;
+	shovel.held.right.rotation = 180;
+	shovel.held.down.rotation = 240;
+	shovel.held.down.position[1] = 24;
+	shovel.held.down.position[0] = 10;
+	shovel.held.up.rotation = 60;
+	shovel.held.up.position[1] = -20;	
+	
+}
+
+Teddy.Levels.Level1.prototype._initTrimmers = function(){
+	
+	var trimmers = this.items.trimmers;
+	trimmers.held.left.position[0]= -20;
+	trimmers.held.left.position[1] = -12;
+	trimmers.held.right.position[0] = 26;
+	trimmers.held.right.position[1] = -12;
+	trimmers.held.right.rotation = 0;
+	trimmers.held.down.rotation = 0;
+	trimmers.held.down.position[1] = 2;
+	trimmers.held.up.rotation = 0;
+	trimmers.held.up.position[1] = -20;
+
+	
+	trimmers.animations.add('cut', [1,0,1,0,1,0],8);
+	trimmers._update = trimmers.update;
+	
 }
 
 Teddy.Levels.Level1.prototype._initRock = function(d){
-	var rock = this.items.rock;
+	var rock = this.items.rock;	
 	
-	
-	//clippers are on the person until the rock is thrown
-	
+	rock.thrownToWindow = function(){
+		
+		var t = game.add.tween(this);
+		t.to({x :1250, y  : 160}, 500);
+		t.onComplete.add(function(){
+			this.game.adv.activeLevel.items.rock.x= -500;
+			this.game.adv.activeLevel.sprites.crack.x = this.game.adv.activeLevel.sprites.crack.oldx;
+			this.game.adv.activeLevel.sprites.crack.y = this.game.adv.activeLevel.sprites.crack.oldy;
+			this.game.adv.activeLevel.npcs.gardener.hasClippers = false; // drops them.
+			this.game.adv.dialogueBox.show("What was that noise? \nI'd better go inside and check it out!");
+			this.game.adv.activeLevel.npcs.gardener.vision.destroy();
+			this.game.adv.activeLevel.npcs.gardener.destroy();
+		});
+		
+		t.start();		
+	}
 }
+
 Teddy.Levels.Level1.prototype._initWorkbenchTrigger = function(){
 	var wbt = this.triggers.workbenchTrigger;
 	wbt.width = 150;
@@ -302,7 +395,7 @@ Teddy.Levels.Level1.prototype._initWorkbenchTrigger = function(){
 				this.game.adv.activeLevel.items.screwdriver.x -= 100;
 				this.game.adv.activeLevel.items.screwdriver.y += 20;
 				//TODO kill the trigger
-				//this.destroy();
+				this.x = -360;
 			}
 		} else {
 			this.game.adv.dialogueBox.show("Look the screwdriver is up there. \n I just need something to knock it down...");
@@ -317,8 +410,7 @@ Teddy.Levels.Level1.prototype._initWindowTrigger = function(){
 	this.sprites.crack.oldx  = this.sprites.crack.x;
 	this.sprites.crack.oldy = this.sprites.crack.y;	
 	this.sprites.crack.x = -300;
-	this.sprites.crack.y = -300;
-	
+	this.sprites.crack.y = -300;	
 	wt.cracked = false;
 	wt.width = 220;
 	wt.height = 100;
@@ -326,17 +418,14 @@ Teddy.Levels.Level1.prototype._initWindowTrigger = function(){
 	wt.addAction(function(){
 		if(this.game.adv.player.item){
 			if(this.game.adv.player.item.name === 'rock'){
-				this.cracked = true;
+				
+				this.game.adv.player.item.thrownToWindow();
+				//this.cracked = true; //apply this to the window
 				
 				//tween rock then make dissapear
 				this.game.adv.player.item = null;
-
-				this.game.adv.activeLevel.items.rock.x= -500;
-				this.game.adv.activeLevel.sprites.crack.x = this.game.adv.activeLevel.sprites.crack.oldx;
-				this.game.adv.activeLevel.sprites.crack.y = this.game.adv.activeLevel.sprites.crack.oldy;
-				this.game.adv.activeLevel.npcs.gardener.hasClippers = false; // drops them.
-				this.game.adv.dialogueBox.show("What was that noise? I'd better go inside and check it out");
-				this.game.adv.activeLevel.npcs.gardener.destroy(); //patrol
+				
+			
 			}
 		} else {
 			if(!this.cracked){
@@ -348,6 +437,8 @@ Teddy.Levels.Level1.prototype._initWindowTrigger = function(){
 }
 
 Teddy.Levels.Level1.prototype._initCatdoorTrap = function(d){
+	rcd = this.sprites.catdoor;
+	rcd.animations.add('open',[0,1,2,3], 14);
 	var cd = this.triggers.catdoorTrap;
 	cd.height = 300;
 	cd.width = 100;
@@ -367,6 +458,30 @@ Teddy.Levels.Level1.prototype._initCatdoorTrap = function(d){
 			if(this.game.adv.player.item.name === 'screwdriver'){
 				this.x = -500;
 				this.y = - 300; 
+				this.game.adv.activeLevel.sprites.catdoor.animations.play('open');
+				this.game.adv.player.cannotMove = true;
+				
+				var fadeOut = function(){
+					this.spr_bg = this.game.add.graphics(0, 0);
+					this.spr_bg.fixedToCamera = true;
+					this.spr_bg.beginFill('#000000', 1);
+					this.spr_bg.drawRect(0, 0, this.game.width, this.game.height);
+					this.spr_bg.alpha = 0;
+					this.spr_bg.endFill();
+
+					this.s = this.game.add.tween(this.spr_bg);
+					this.s.to({ alpha: 1 }, 1200, null);
+					this.s.onComplete.add(function(){
+						this.game.adv.activeLevel.music.stop();
+						console.log('goto end game');
+						//TODO goto ending sequence
+						game.state.start('Ending',true);
+					}, this);
+					this.s.start();					
+					game.add.tween(this.game.adv.activeLevel.music).to({volume:0}, 1200).start();
+				};
+				fadeOut();
+				
 			} else {
 				this.game.adv.dialogueBox.show('Well... this '+this.game.adv.player.item.name+' does nothing here');
 			}
@@ -387,7 +502,7 @@ Teddy.Levels.Level1.prototype._initDecoy = function(d){
 			}
 		} else {
 			if(!this.dugUp){
-				this.game.adv.dialogueBox.show('Stupid dog burring stuff in the dirt');
+				this.game.adv.dialogueBox.show('Hmph. The stupid dog has been digging.\n I wonder if he buried something.\nI should look for a way to dig!');
 			}
 		}
 	});
@@ -395,7 +510,6 @@ Teddy.Levels.Level1.prototype._initDecoy = function(d){
 
 Teddy.Levels.Level1.prototype._initDirt = function(){
 	var dirt = this.triggers.dirt;
-	//dirt.touchInteraction = true;
 	dirt.addAction(function(){
 		if(this.game.adv.player.item){
 			if(this.game.adv.player.item.name === 'shovel' && !this.dugUp){
@@ -407,7 +521,7 @@ Teddy.Levels.Level1.prototype._initDirt = function(){
 			}
 		} else {
 			if(!this.dugUp){
-				this.game.adv.dialogueBox.show('Stupid dog burring stuff in the dirt');
+				this.game.adv.dialogueBox.show('Hmph. The stupid dog has been digging.\n I wonder if he buried something.\nI should look for a way to dig!');
 			}
 		}
 	});
@@ -415,6 +529,11 @@ Teddy.Levels.Level1.prototype._initDirt = function(){
 
 Teddy.Levels.Level1.prototype._initBone = function(){
 	var bone = this.items.bone;
+	bone.held.left.rotation = 90;
+	bone.held.right.rotation = 90;
+	bone.held.right.position[0] += 12;
+	bone.held.up.position[1] -= 8;
+	bone.held.down.position[1] -= 8;
 	bone._update = bone.update;
 	bone.update = function(){
 		if(this.uncovered) {
@@ -432,10 +551,14 @@ Teddy.Levels.Level1.prototype._initSwing = function(){
 		if(this.game.adv.player.item){
 			if(this.game.adv.player.item.name === 'trimmers'){
 				if(!this.cutDown){
-					this.game.adv.activeLevel.triggers.sandboxTrap.destroy();
-					this.frame = 1;
-					this.game.adv.player.bringToTop();
-					this.game.adv.activeLevel.sprites.treeTop.bringToTop();
+					var cut = this.game.adv.activeLevel.items.trimmers.animations._anims.cut;
+					cut.onComplete.add(function(){
+						this.game.adv.activeLevel.triggers.sandboxTrap.destroy();
+						this.frame = 1;
+						this.game.adv.player.bringToTop();
+						this.game.adv.activeLevel.sprites.treeTop.bringToTop();
+					},this);
+					cut.play();					
 				}
 				this.cutDown = true;
 			}
@@ -462,27 +585,31 @@ Teddy.Levels.Level1.prototype._initSandboxTrap = function(){
 
 //Player stuff
 Teddy.Levels.Level1.prototype._initPlayer = function(){
-	this.game.adv.player.caught = false;
-	this.game.adv.player._update = this.game.adv.player.update;
-	this.game.adv.player.body.setSize(78,28,2,20);
+	var player = this.game.adv.player;
+	
+	player.speed = 160;
+	player.caught = false;
+	player._update = this.game.adv.player.update;
+	player.body.setSize(78,28,2,20);
 	
 	//LEFT
-	this.game.adv.player.animations.add('moveleft',[7,8,7,6], 6);
-	this.game.adv.player.animations.add('moveleftItem',[10,11,10,9], 6);
+	player.animations.add('moveleft',[7,8,7,6], 6);
+	player.animations.add('moveleftItem',[10,11,10,9], 6);
 
 	//RIGHT
-	this.game.adv.player.animations.add('moveright',[1,2,1,0], 6);
-	this.game.adv.player.animations.add('moverightItem',[4,5,4,3], 6);
+	player.animations.add('moveright',[1,2,1,0], 6);
+	player.animations.add('moverightItem',[4,5,4,3], 6);
 	
 	//UP
-	this.game.adv.player.animations.add('moveup',[19,20,19,18], 6);
-	this.game.adv.player.animations.add('moveupItem',[22,23,22,21], 6);
+	player.animations.add('moveup',[19,20,19,18], 6);
+	player.animations.add('moveupItem',[22,23,22,21], 6);
 	
 	//DOWN
-	this.game.adv.player.animations.add('movedown',[13,14,13,12], 6);
-	this.game.adv.player.animations.add('movedownItem',[16,17,16,15], 6);
+	player.animations.add('movedown',[13,14,13,12], 6);
+	player.animations.add('movedownItem',[16,17,16,15], 6);
 	
-	this.game.adv.player.update = function(){
+	player.update = function(){
+		if(!this.cannotMove){
 		this._update();
 		if(this.caught){
 			this.game.state.start('Game',true);
@@ -504,21 +631,25 @@ Teddy.Levels.Level1.prototype._initPlayer = function(){
 					this.animations.play('move'+g);
 					break;
 				}
-			}
-			
-			this.TutInControls = false;
-			
+			}			
 		}
 		if(this.stopAnim){
 			this.animations.stop();
 		}
+		
+		//super hackish
+		this.game.adv.activeLevel.sprites.treeTop.bringToTop();
+	} else {
+		this.body.velocity.x = 0;
+		this.body.velocity.y = 0;
+	}
 	}	
 }
 
 //Dog stuff
 Teddy.Levels.Level1.prototype._initDog = function(){
 	//doghouse and leash stuff
-	this.sprites.doghouse.anchor.setTo(0.5,0.5);
+	this.sprites.doghouse.anchor.setTo(0.5,1);
 	this.npcs.dog.leash = 500;
 	this.npcs.dog.house = this.sprites.doghouse;	
 	
@@ -534,32 +665,42 @@ Teddy.Levels.Level1.prototype._initDog = function(){
 		}
 		
 	}
-	
+	this.npcs.dog.mumble = game.add.text(60,60,'',{
+		font: "30px Arial",
+		fill: "#424242"
+	});
+	this.npcs.dog.mumble.fixedToCamera = true;
+
 	//modifies the update 
 	this.npcs.dog._update = this.npcs.dog.update;
 	this.npcs.dog.update = function(){
 		this._update();
-		if(!this.hasBone){
-			var dist =game.physics.arcade.distanceBetween(this, this.game.adv.activeLevel.items.bone);
-			if(dist < 600){
-				game.physics.arcade.moveToObject(this, this.game.adv.activeLevel.items.bone, this.speed);
-				console.log('Give me the bone, give me the bone');
-				this.game.adv.dialogueBox.show('Rough rouogh .. bark batr bark.. bone?');
-				if(dist < 60){
-					this.hasBone = true;
-				}
-			} else {
-				game.physics.arcade.moveToObject(this, this.game.adv.player, this.speed);
-				this.rotation = game.physics.arcade.angleToXY(this, this.game.adv.player.x,this.game.adv.player.y);
-			}
-				this.checkConstraint();
 		
-		} else {
+		var distToPlayer =game.physics.arcade.distanceBetween(this, this.game.adv.player);
+		var distToBone =game.physics.arcade.distanceBetween(this, this.game.adv.activeLevel.items.bone);
+		
+		if(!this.hasBone){
+			game.physics.arcade.moveToObject(this, this.game.adv.player, this.speed);
+			this.rotation = game.physics.arcade.angleToXY(this, this.game.adv.player.x,this.game.adv.player.y);
+			this.checkConstraint();
+		}
+		if(distToBone < 600 && !this.hasBone){
+			game.physics.arcade.moveToObject(this, this.game.adv.activeLevel.items.bone, this.speed);
+				this.mumble.setText(' Bark Bark! Rough!\n(Give me the bone, I want the bone.) \nBark Bark \n(Bone, Bone, Bone!)\nBark Bark, Bark \n(Please, Please, Please...)');
+				
+		} else if(distToPlayer < 600 && !this.hasBone){
+			this.mumble.setText('"Grrrr..Rough! Grrrrr... \n(You should\'nt be walking! )\n Grrr Bark! Bark! ...\n (I\'m going to eat you!)"');
+		} else if(this.mumble){
+
+			this.mumble.setText('');
+		}
+				
+		if(this.hasBone){
 			
 			if(game.physics.arcade.distanceBetween(this, this.house) > 60){
-				game.physics.arcade.moveToObject(this, this.house, 90);
+				game.physics.arcade.moveToObject(this, this.house, 130);
 				this.rotation = game.physics.arcade.angleToXY(this, this.house.x,this.house.y);
-				this.game.adv.activeLevel.items.bone.x = this.x;
+				this.game.adv.activeLevel.items.bone.x = this.x- 60;
 				this.game.adv.activeLevel.items.bone.y = this.y;
 			} else {
 				this.body.velocity.y = 0;
@@ -571,11 +712,11 @@ Teddy.Levels.Level1.prototype._initDog = function(){
 	//intraction variables
 	this.npcs.dog.addInteraction(function(){
 		if(!this.hasBone && this.game.adv.player.item.name !== 'bone'){
-			this.game.adv.dialogueBox.show("I've Got you now...and your pretty little face too");
+			this.game.adv.dialogueBox.show("GRRRRRRr... GrwolllGRRR \n(I've Got you now...and \nyour pretty little face too)");
 			this.game.adv.player.caught = true;
 		} if (!this.hasBone  && this.game.adv.player.item.name === 'bone'){
 			this.hasBone = true;
-			this.game.adv.dialogueBox.show("Your'e my best friend now!");
+			this.game.adv.dialogueBox.show("Mmnn, mnnn...bark, bark! \n(Thanks! Your'e my best friend now!)");
 			this.game.adv.player.item = null;
 		}
 	});
@@ -588,22 +729,41 @@ Teddy.Levels.Level1.prototype._initGardner = function(){
 	this.npcs.gardener.animations.add('walk',[1,2,1,0],3, true);
 	this.npcs.gardener.animations.play('walk');
 	this.npcs.gardener.startPatrol();
-	//this.npcs.gardener.vision.width = 300,
-	//this.npcs.gardener.vision.height = 400;
+	this.npcs.gardener.hasVision = true;
+	this.npcs.gardener.vision.width = 150;
+	this.npcs.gardener.vision.height = 300;
 	this.npcs.gardener.hasClippers =true;
 	this.npcs.gardener.addWhenSeePlayerAction(function(){
 		this.game.adv.dialogueBox.show('Yeah I see ya there. \n What do you want me to do about it???');
 		this.game.adv.player.caught = true;
 	});
 	
+	this.npcs.gardener.bringToTop();
+
 	this.npcs.gardener._update = this.npcs.gardener.update;
 	this.npcs.gardener.update = function(){
 		this._update();
 		if(this.hasClippers){
-			this.game.adv.activeLevel.items.trimmers.x = this.x;
+			this.game.adv.activeLevel.items.trimmers.x = this.x;//todo change this location
 			this.game.adv.activeLevel.items.trimmers.y = this.y;
 		}
-	}
+		var dist =game.physics.arcade.distanceBetween(this, this.game.adv.player);
+		
+		if(dist < 600){
+			if(!this.mumble){
+				this.mumble = game.add.text(560,60,
+				'"Pruning...dut da dut ta dut.. . \nI love to prune with these\n clippers in my hand\n ..da dut ta du\n I love to prune in my garden"',
+				{
+					font: "30px Arial",
+					fill: "#424242"
+				});
+				this.mumble.fixedToCamera = true;
+			}
+		} else 	if(this.mumble){
+				this.mumble.destroy();
+				this.mumble = null;
+			}
+		}
 }
 
 Teddy.Levels.Level1.prototype._initDumptruck = function(){

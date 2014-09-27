@@ -14,6 +14,12 @@ Loading.prototype = {
 		game.load.image('intro', 'assets/introImage.png');
 		game.load.spritesheet('blink','assets/blink1.png', 106,68);
 		
+		game.load.image('end1','assets/end1.png');
+		game.load.image('end2','assets/end2.png');
+		game.load.image('end3','assets/end3.png');
+		game.load.image('end4','assets/end4.png');
+
+		
 		game.load.tilemap('level1', 'assets/level1z.json', null, Phaser.Tilemap.TILED_JSON); // loading the tilemap 
 		game.load.image('testTiles', 'assets/testTiles_green1.png'); // loading the tileset image
 		game.load.image('testTiles2', 'assets/testTiles_green1.png'); // loading the tileset image
@@ -28,7 +34,7 @@ Loading.prototype = {
 		game.load.spritesheet('trimmers', 'assets/trimmers3.png',43,68);
 		game.load.spritesheet('dirt','assets/dirt1.png',120,60);//120,60
 		game.load.image('bone', 'assets/bone3.png');
-		game.load.image('shovel','assets/shovel2.png');
+		game.load.image('shovel','assets/shovel3.png');
 		game.load.image('sandbox', 'assets/sandbox.png');
 		game.load.image('garden', 'assets/garden1.png');
 		game.load.image('house','assets/house3.png');
@@ -39,6 +45,8 @@ Loading.prototype = {
 		game.load.image('screwdriver','assets/screwdriver.png');
 		game.load.image('crack', 'assets/crack.png');
 		game.load.image('dialogueBox', 'assets/dialogBox1.png');
+		game.load.image('vision', 'assets/vision.png');
+		game.load.spritesheet('catdoor','assets/catdoor1.png',100,82);
 		
 		game.plugins.add(new Phaser.Plugin.Adventurer(game));
             
@@ -48,6 +56,7 @@ Loading.prototype = {
 	
 		game.state.add('Home', Main);
 		game.state.add('Game', Game);
+		game.state.add('Ending',End);
 	
 		
 		game.state.start('Home', true);
