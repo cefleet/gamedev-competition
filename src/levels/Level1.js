@@ -278,8 +278,8 @@ Teddy.Levels.Level1.prototype._init = function(){
 	
 	//this.game.adv.dialogueBox.show('');
 	//pause movement for a bit
-	var t = " CONTROLS :\n Arrow Left - Move Left  \n Arrow Up - Move Up \n Arrow Right - Move Right \n Arrow Down - Move Down \n Spacebar - All Actions \n (Inspect Location, Pickup Item,\n Drop Item,  Talk , Interact) \n Esc - Menu";
-	this.guideText = game.add.text(720, 470, t, {
+	var t = "Esc - Menu and Controls";
+	this.guideText = game.add.text(750, 600, t, {
         font: "16px Arial",
         fill: "#4343C9",
         align :'left'
@@ -368,6 +368,7 @@ Teddy.Levels.Level1.prototype._initRock = function(d){
 		var t = game.add.tween(this);
 		t.to({x :1250, y  : 160}, 500);
 		t.onComplete.add(function(){
+			game.add.audio('glass').play();
 			this.game.adv.activeLevel.items.rock.x= -500;
 			this.game.adv.activeLevel.sprites.crack.x = this.game.adv.activeLevel.sprites.crack.oldx;
 			this.game.adv.activeLevel.sprites.crack.y = this.game.adv.activeLevel.sprites.crack.oldy;
@@ -390,7 +391,7 @@ Teddy.Levels.Level1.prototype._initWorkbenchTrigger = function(){
 	wbt.addAction(function(){
 		if(this.game.adv.player.item){
 			if(this.game.adv.player.item.name === 'branch'){
-				
+				game.add.audio('whack').play();
 				//TODO animations
 				this.game.adv.activeLevel.items.screwdriver.x -= 100;
 				this.game.adv.activeLevel.items.screwdriver.y += 20;
@@ -497,6 +498,7 @@ Teddy.Levels.Level1.prototype._initDecoy = function(d){
 	d.addAction(function(){
 		if(this.game.adv.player.item){
 			if(this.game.adv.player.item.name === 'shovel'){
+				game.add.audio('dig').play();
 				this.frame = 1;
 				this.dugUp = true;
 			}
@@ -513,6 +515,7 @@ Teddy.Levels.Level1.prototype._initDirt = function(){
 	dirt.addAction(function(){
 		if(this.game.adv.player.item){
 			if(this.game.adv.player.item.name === 'shovel' && !this.dugUp){
+				game.add.audio('dig').play();
 				this.frame = 1;
 				this.game.adv.activeLevel.items.bone.uncovered = true;
 				this.game.adv.activeLevel.items.bone.bringToTop();
@@ -552,11 +555,13 @@ Teddy.Levels.Level1.prototype._initSwing = function(){
 			if(this.game.adv.player.item.name === 'trimmers'){
 				if(!this.cutDown){
 					var cut = this.game.adv.activeLevel.items.trimmers.animations._anims.cut;
+					game.add.audio('snip').play();
 					cut.onComplete.add(function(){
 						this.game.adv.activeLevel.triggers.sandboxTrap.destroy();
 						this.frame = 1;
 						this.game.adv.player.bringToTop();
 						this.game.adv.activeLevel.sprites.treeTop.bringToTop();
+						game.add.audio('wood').play();
 					},this);
 					cut.play();					
 				}

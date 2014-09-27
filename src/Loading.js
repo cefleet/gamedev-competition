@@ -10,6 +10,12 @@ Loading.prototype = {
 		game.load.audio('gameMusic','assets/Surreptitious.mp3');
 		game.load.audio('cutsceneMusic','assets/Faith.ogg');
 		
+		game.load.audio('dig', 'assets/dig.ogg');
+		game.load.audio('glass','assets/glass.ogg');
+		game.load.audio('snip','assets/snip.ogg');
+		game.load.audio('whack','assets/whack.ogg');
+		game.load.audio('wood','assets/wood.ogg');
+		
 		game.load.image('title', 'assets/TitleScreen1.png');
 		game.load.image('intro', 'assets/introImage.png');
 		game.load.spritesheet('blink','assets/blink1.png', 106,68);
@@ -48,6 +54,8 @@ Loading.prototype = {
 		game.load.image('vision', 'assets/vision.png');
 		game.load.spritesheet('catdoor','assets/catdoor1.png',100,82);
 		
+		game.load.image('greybg', 'assets/greybg.png');
+		game.load.image('menu', 'assets/menu.png');
 		game.plugins.add(new Phaser.Plugin.Adventurer(game));
             
 		

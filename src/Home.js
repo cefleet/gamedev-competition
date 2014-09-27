@@ -14,7 +14,7 @@ Main.prototype = {
 			s.start();
 			mT.start();
 		}
-		
+		/*
 		var esc = game.input.keyboard.addKey(Phaser.Keyboard.ESC);
 		esc.onDown.add(start, this);
 		
@@ -28,12 +28,12 @@ Main.prototype = {
 		var startButton = game.add.button(100,366,'',this.fadeOut, this);
 		startButton.width = 250;
 		startButton.height = 90;
-
+*/
 		
 		//DO NOT DELETE ABOVE IT IS IMPORTANT
 		
 
-		//game.state.start('Game',true); //comment or delete this allow title and intro
+		game.state.start('Game',true); //comment or delete this allow title and intro
 	},
 	
 	fadeOut : function(){
