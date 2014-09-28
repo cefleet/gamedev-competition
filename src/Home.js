@@ -2,21 +2,15 @@ var Main = function(){};
 Main.prototype = {
 	create : function(){
 		
-
-		var start = function(){			
-			//stop music then start
-			var mT = game.add.tween(this.cmusic).to({volume:0}, 2000);
-			var s = this.game.add.tween(this.spr_bg);		
-			s.to({ alpha: 1 }, 2000, null);
-			mT.onComplete.add(function(){
-				game.state.start('Game',true);
-			});
-			s.start();
-			mT.start();
-		}
-		/*
+		this.spr_bg = this.game.add.graphics(0, 0);
+		this.spr_bg.beginFill('#000000', 1);
+		this.spr_bg.drawRect(0, 0, this.game.width, this.game.height);
+		this.spr_bg.alpha = 0;
+		this.spr_bg.endFill();
+ 
+		
 		var esc = game.input.keyboard.addKey(Phaser.Keyboard.ESC);
-		esc.onDown.add(start, this);
+		esc.onDown.add(this.skip, this);
 		
 		this.music = game.add.audio('introMusic',1,true);
 		this.music.play('',0,.4,true);
@@ -28,20 +22,26 @@ Main.prototype = {
 		var startButton = game.add.button(100,366,'',this.fadeOut, this);
 		startButton.width = 250;
 		startButton.height = 90;
-*/
+
 		
 		//DO NOT DELETE ABOVE IT IS IMPORTANT
 		
 
-		game.state.start('Game',true); //comment or delete this allow title and intro
+		//game.state.start('Game',true); //comment or delete this allow title and intro
 	},
-	
-	fadeOut : function(){
-		this.spr_bg = this.game.add.graphics(0, 0);
-		this.spr_bg.beginFill('#000000', 1);
-		this.spr_bg.drawRect(0, 0, this.game.width, this.game.height);
-		this.spr_bg.alpha = 0;
-		this.spr_bg.endFill();
+	skip : function(){			
+			//stop music then start
+			var mT = game.add.tween(this.music).to({volume:0}, 2000);
+			
+			var s = this.game.add.tween(this.spr_bg);		
+			s.to({ alpha: 1 }, 2000, null);
+			mT.onComplete.add(function(){
+				game.state.start('Game',true);
+			});
+			s.start();
+			mT.start();
+		},
+	fadeOut : function(){		
 
 		this.s = this.game.add.tween(this.spr_bg);
 		this.s.to({ alpha: 1 }, 1200, null);
@@ -54,8 +54,8 @@ Main.prototype = {
 	},
 	
 	fadeIn : function() {		
-		this.cmusic = game.add.audio('cutsceneMusic',1,true);
-		this.cmusic.play('',0,.8,true);
+		this.music = game.add.audio('cutsceneMusic',1,true);
+		this.music.play('',0,.8,true);
 		
 		this.introImg = game.add.sprite(-3500,-620,'intro');
 		this.introImg.scale.setTo(2.4,2.4);
@@ -164,7 +164,7 @@ Main.prototype = {
 	},
 	fadeMusic  :function(){
 			
-		var mT = game.add.tween(this.cmusic).to({volume:0}, 300);
+		var mT = game.add.tween(this.music).to({volume:0}, 300);
 		mT.onComplete.add(function(){
 			game.state.start('Game',true);
 		});

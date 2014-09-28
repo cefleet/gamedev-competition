@@ -9,6 +9,8 @@ var game = new Phaser.Game(960,640, Phaser.CANVAS,'', {
 
 function preload(){
 	//Preload Images
+	game.load.image('loadingBG', 'assets/loadingBG.png');
+	game.load.image('preload','assets/preload.png');
 	game.LevelManager = new Teddy.LevelManager(game);
 }
 

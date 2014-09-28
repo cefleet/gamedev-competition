@@ -65,15 +65,14 @@ Game.prototype = {
 	menuClick : function(event){
 		if(game.paused){
 			if(event.x > 330 && event.x < 630 && event.y > 96 && event.y < 158){
-				console.log('Clicked button1');
 				game.paused = false;
+				game.adv.activeLevel.music.stop();
 				game.state.start('Home',true);
 			} else if(event.x > 330 && event.x < 630 && event.y > 160 && event.y < 222){
-				console.log('Clicked button2');
 				game.paused = false;
-				game.state.start('Game',true);
-			
-		}
+				game.adv.activeLevel.music.stop();
+				game.state.start('Game',true);			
+			}
 		}
 	}
 }

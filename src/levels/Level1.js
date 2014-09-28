@@ -89,7 +89,7 @@ Teddy.Level.call(this,game,'Level1',
 			name : 'workbenchTrigger',
 			x : 860,
 			y : 300,
-			key:'boom'
+			key:''
 		}		
 	],
 	items : [
@@ -154,6 +154,12 @@ Teddy.Level.call(this,game,'Level1',
 			x : 2300,
 			y:1670,
 			key : 'dumptruck'
+		},
+		{
+			name : 'nessy',
+			x : 190,
+			y : 1650,
+			key : 'nessy'
 		}
 	],
 	sprites: [
@@ -238,7 +244,7 @@ Teddy.Levels.Level1.prototype.constructor = Teddy.Levels.Level1;
 
 //Initilizes them Level
 Teddy.Levels.Level1.prototype._init = function(){
-	
+	this.game.adv.openDialogue = false;
 	this.music = game.add.audio('gameMusic',1,true);
 	this.music.play('',0,.8,true);
 		    
@@ -259,6 +265,7 @@ Teddy.Levels.Level1.prototype._init = function(){
 	this._initBone();
 	this._initGardner();
 	this._initDumptruck();
+	this._initNessy();
 	this._initSwing();
 	this._initSandboxTrap();
 	this._initCatdoorTrap();
@@ -430,7 +437,7 @@ Teddy.Levels.Level1.prototype._initWindowTrigger = function(){
 			}
 		} else {
 			if(!this.cracked){
-				this.game.adv.dialogueBox.show('I wish I was tall enough to see inside this window');
+				this.game.adv.dialogueBox.show('Hmmm. ');
 			}
 		}
 	});
@@ -474,7 +481,6 @@ Teddy.Levels.Level1.prototype._initCatdoorTrap = function(d){
 					this.s.to({ alpha: 1 }, 1200, null);
 					this.s.onComplete.add(function(){
 						this.game.adv.activeLevel.music.stop();
-						console.log('goto end game');
 						//TODO goto ending sequence
 						game.state.start('Ending',true);
 					}, this);
@@ -617,7 +623,27 @@ Teddy.Levels.Level1.prototype._initPlayer = function(){
 		if(!this.cannotMove){
 		this._update();
 		if(this.caught){
-			this.game.state.start('Game',true);
+			//music.stop
+			this.caught = false;
+			this.cannotMove = true;
+			this.game.adv.activeLevel.music.stop();
+			this.spr_bg = this.game.add.graphics(0, 0);
+			this.spr_bg.beginFill('#000000', 1);
+			this.spr_bg.drawRect(0, 0, this.game.width, this.game.height);
+			this.spr_bg.alpha = 0;
+			this.spr_bg.endFill();
+			this.spr_bg.fixedToCamera = true;
+			game.world.bringToTop(this.spr_bg);
+			this.s = this.game.add.tween(this.spr_bg);
+			this.s.to({ alpha: 1 }, 5000, null);
+			this.s.onComplete.add(function(){
+				this.game.adv.activeLevel.music.stop();
+				this.cannotMove = false;
+				game.state.start('Game',true);
+			}, this);
+			game.time.events.add(4, function(){
+				this.s.start();
+			}, this);			
 		}
 		//this.animations.play('stopped');
 		this.stopAnim = true;
@@ -644,6 +670,11 @@ Teddy.Levels.Level1.prototype._initPlayer = function(){
 		
 		//super hackish
 		this.game.adv.activeLevel.sprites.treeTop.bringToTop();
+		if(this.game.adv.openDialogue){
+			this.game.adv.dialogueBox.sprite.bringToTop();
+			game.world.bringToTop(this.game.adv.dialogueBox.text);
+		}
+		
 	} else {
 		this.body.velocity.x = 0;
 		this.body.velocity.y = 0;
@@ -653,6 +684,36 @@ Teddy.Levels.Level1.prototype._initPlayer = function(){
 
 //Dog stuff
 Teddy.Levels.Level1.prototype._initDog = function(){
+	var ropeLengths = Math.ceil(500/17)+1;
+	this.npcs.dog.rope = [];
+	for(var i = 0; i < ropeLengths; i++){
+			this.npcs.dog.rope[i] = game.add.sprite(-18,-18, 'rope');
+			this.npcs.dog.rope[i].anchor.setTo(1,0.5);
+	}
+	this.npcs.dog.moveRope = function(){
+	
+		var angle = Phaser.Math.angleBetweenPoints(this.house, this) + game.math.degToRad(180);		
+		this.rope[this.rope.length-1].x = this.x;
+		this.rope[this.rope.length-1].y = this.y;
+		
+		this.rope[this.rope.length-1].rotation = angle;
+		
+		
+		if(!game.physics.arcade.distanceBetween(this, this.house) < 450){
+			this.rope[this.rope.length-1].y = this.y+((this.house.y -this.y)/4)+34;
+		}
+		
+		for(var i = this.rope.length-2; i > 0; i--){	
+			if(game.physics.arcade.distanceBetween(this, this.house) < 450){
+				angle = Phaser.Math.angleBetweenPoints(this.house,this.rope[i+1])+game.math.degToRad(180)-game.math.degToRad(game.physics.arcade.distanceBetween(this.house, this.rope[i+1])/i);
+			}
+			
+			this.rope[i].rotation = angle;
+			this.rope[i].y = Math.sin(angle)*17+this.rope[i+1].y;
+			this.rope[i].x = Math.cos(angle)*17+this.rope[i+1].x;
+		}
+	},
+	
 	//doghouse and leash stuff
 	this.sprites.doghouse.anchor.setTo(0.5,1);
 	this.npcs.dog.leash = 500;
@@ -671,7 +732,7 @@ Teddy.Levels.Level1.prototype._initDog = function(){
 		
 	}
 	this.npcs.dog.mumble = game.add.text(60,60,'',{
-		font: "30px Arial",
+		font: "22px Arial",
 		fill: "#424242"
 	});
 	this.npcs.dog.mumble.fixedToCamera = true;
@@ -680,7 +741,7 @@ Teddy.Levels.Level1.prototype._initDog = function(){
 	this.npcs.dog._update = this.npcs.dog.update;
 	this.npcs.dog.update = function(){
 		this._update();
-		
+		this.moveRope();
 		var distToPlayer =game.physics.arcade.distanceBetween(this, this.game.adv.player);
 		var distToBone =game.physics.arcade.distanceBetween(this, this.game.adv.activeLevel.items.bone);
 		
@@ -689,12 +750,11 @@ Teddy.Levels.Level1.prototype._initDog = function(){
 			this.rotation = game.physics.arcade.angleToXY(this, this.game.adv.player.x,this.game.adv.player.y);
 			this.checkConstraint();
 		}
-		if(distToBone < 600 && !this.hasBone){
+		if(distToBone < 540 && !this.hasBone){
 			game.physics.arcade.moveToObject(this, this.game.adv.activeLevel.items.bone, this.speed);
 				this.mumble.setText(' Bark Bark! Rough!\n(Give me the bone, I want the bone.) \nBark Bark \n(Bone, Bone, Bone!)\nBark Bark, Bark \n(Please, Please, Please...)');
-				
-		} else if(distToPlayer < 600 && !this.hasBone){
-			this.mumble.setText('"Grrrr..Rough! Grrrrr... \n(You should\'nt be walking! )\n Grrr Bark! Bark! ...\n (I\'m going to eat you!)"');
+			} else if(distToPlayer < 540 && !this.hasBone){
+			this.mumble.setText('"Grrrr..Rough! Grrrrr... \n(You shouldn\'t be walking! )\n Grrr Bark! Bark! ...\n (I\'m going to eat you!)"');
 		} else if(this.mumble){
 
 			this.mumble.setText('');
@@ -716,14 +776,20 @@ Teddy.Levels.Level1.prototype._initDog = function(){
 	
 	//intraction variables
 	this.npcs.dog.addInteraction(function(){
-		if(!this.hasBone && this.game.adv.player.item.name !== 'bone'){
+		if(!this.game.adv.player.item && !this.hasBone){
 			this.game.adv.dialogueBox.show("GRRRRRRr... GrwolllGRRR \n(I've Got you now...and \nyour pretty little face too)");
 			this.game.adv.player.caught = true;
-		} if (!this.hasBone  && this.game.adv.player.item.name === 'bone'){
+		} else if (!this.hasBone  && this.game.adv.player.item.name !== 'bone'){
+			this.game.adv.dialogueBox.show("GRRRRRRr... GrwolllGRRR \n(I've Got you now...and \nyour pretty little face too)");
+			this.game.adv.player.caught = true;
+		} else if (this.hasBone  || this.game.adv.player.item.name === 'bone'){
 			this.hasBone = true;
 			this.game.adv.dialogueBox.show("Mmnn, mnnn...bark, bark! \n(Thanks! Your'e my best friend now!)");
 			this.game.adv.player.item = null;
+		} else {
+			
 		}
+		
 	});
 	this.npcs.dog.touchInteraction = true;
 }
@@ -735,11 +801,11 @@ Teddy.Levels.Level1.prototype._initGardner = function(){
 	this.npcs.gardener.animations.play('walk');
 	this.npcs.gardener.startPatrol();
 	this.npcs.gardener.hasVision = true;
-	this.npcs.gardener.vision.width = 150;
-	this.npcs.gardener.vision.height = 300;
+	this.npcs.gardener.vision.width = 300;
+	this.npcs.gardener.vision.height = 400;
 	this.npcs.gardener.hasClippers =true;
 	this.npcs.gardener.addWhenSeePlayerAction(function(){
-		this.game.adv.dialogueBox.show('Yeah I see ya there. \n What do you want me to do about it???');
+		this.game.adv.dialogueBox.show("Did that teddy just move?\nHmm guess not. It's dirty though.\nI'm just gonna toss it in the trash.");
 		this.game.adv.player.caught = true;
 	});
 	
@@ -756,19 +822,126 @@ Teddy.Levels.Level1.prototype._initGardner = function(){
 		
 		if(dist < 600){
 			if(!this.mumble){
-				this.mumble = game.add.text(560,60,
+				//if(this.
+				this.mumble = game.add.text(this.x-100,this.y + 200,
 				'"Pruning...dut da dut ta dut.. . \nI love to prune with these\n clippers in my hand\n ..da dut ta du\n I love to prune in my garden"',
 				{
-					font: "30px Arial",
+					font: "22px Arial",
 					fill: "#424242"
 				});
-				this.mumble.fixedToCamera = true;
+				//this.mumble.fixedToCamera = true;
 			}
+			
+
+			this.mumble.fixedToCamera = false;
+			if(this.y > this.game.adv.player.y){
+				this.mumble.y = this.y-260;
+			} else {
+				this.mumble.y = this.y+200;
+			}
+				this.mumble.x = this.x-100;
+			
+
+			/*
+			var locs ={};
+				if(this.x < this.game.adv.player.x){
+					locs.x = 550;
+				} else {
+					locs.x = 900;
+				}
+				if(this.y < this.game.adv.player.y){
+					locs.y = 60;
+					locs.a = 0;
+				} else {
+					locs.y = 180;
+					locs.a = 1;
+				}
+				//This is because for some reason the line would not move in this update
+				
+				if(this.line){
+					this.line.destroy();
+				}
+				this.line = game.add.sprite(locs.x,locs.y,'line');
+				this.line.fixedToCamera = true;
+				this.line.anchor.setTo(0.5,locs.a);
+				this.line.rotation = Phaser.Math.angleBetweenPoints(this.line, this);
+				//console.log(this.line.rotation);
+			//rotation here
+			* */
 		} else 	if(this.mumble){
+				/*
+				if(this.line){
+					this.line.destroy();
+				}
+				*/ 
 				this.mumble.destroy();
 				this.mumble = null;
 			}
 		}
+}
+
+Teddy.Levels.Level1.prototype._initNessy = function(){
+	var n = this.npcs.nessy;
+	n.conversations = {
+		first : [
+			"Well, well wha' do we have here!", 
+			"Who are you?", 
+			"The Name's Nessy.\n I'm a Scottish Urban Legand.\n If ya' don't believe meh just read ma birthmark.",
+			"I'll just take your word for it.\n(He looks like a bath toy to me.)", 
+			"Suit yaself.\nSo whats'a pretty lass of bear \nlike you doing out here?", 
+			"I'm not a lass!\nI'm a boy!",
+			"Can you prove it?",
+			" Um .........", 
+			"I don't have time for this.\nCan you help me?",
+			"Help ya do what? Lassie?",
+			"Ugh... \nI'm trying to get inside to my boy.\nCan you help me?",
+			"It'll cost you.\nI need you to promise meh somethin'.",
+			"Ok, what?",
+			"Just assure me that if you see some scientist\nabout in white lab coats you won't \nbe tellin' them where I am.",
+			"I promise.",
+			"Good! Well I don't know how much\nI can help you with. But I do know this.\nThe gardener keeps stacking stones in the garden.",
+			"Ok?",
+			"Well maybe you should look around for\na loose one and see if ya can \ndo something with it.", 
+			"Thank you."
+			],
+			refirst : [
+				"Look for a place to use the loose rock."
+			]
+	};
+	
+	n.onConversation = 'first'; 
+	n.addInteraction(function(){
+		//pauseplayer movment on this one
+		
+			this.game.adv.dialogueBox.show(n.conversations[n.onConversation]);
+			if(n.onConversation === 'first'){
+				n.onConversation = 'refirst';
+			}
+	});
+	 
+	n.body.imovable = true;
+	n.body.moves = false;
+	
+
+	n.mumble = game.add.text(n.x-120,n.y-140,'',{
+		font: "22px Arial",
+		fill: "#424242"
+	});
+//	dt.mumble.fixedToCamera = true;
+	n._update = n.update;
+	n.update  = function(){
+		this._update();	
+		var distToPlayer =game.physics.arcade.distanceBetween(this, this.game.adv.player);
+		if(distToPlayer < 300 && n.onConversation === 'first'){
+			
+			this.mumble.setText("Aye, those crazie scientist a' \nneva gonna find me here!");		
+				
+		} else if(this.mumble){
+			this.mumble.setText('');
+			
+		}
+		game.physics.arcade.collide( this.game.adv.player, this);
+	}
 }
 
 Teddy.Levels.Level1.prototype._initDumptruck = function(){
@@ -784,14 +957,14 @@ Teddy.Levels.Level1.prototype._initDumptruck = function(){
 			"Well that's amazing ... and yet also horrifying.",
 			"Why is it horrifing?",
 			"I've seen enough scary movies about walking toys \nto know that that ain't natural.", 
-			"Whatever, I MUST to get back into the house, \nbut this is my first time being out here. \nI don't know what to do. Can you help me?",
+			"Whatever, I MUST get back into the house, \nbut this is my first time being out here. \nI don't know what to do. Can you help me?",
 			"Well the house is just up that way, \n you can't miss it.",
 			"However the door is right inside the garden \nand the man is gardening.",
 			" I doubt you'd be able to keep on moving if he \nsees you walking around.",
 			"What makes you think that?",
-			"Well i've seen enough cartoons \nto know this type of thing.",
+			"Well I've seen enough cartoons \nto know this type of thing.",
 			"You watch a lot of TV to be an outside toy...",
-			"Yeah well, you'll have that. \nAnyway the door is probably too for you\n to heavy to open by yourself,",
+			"Yeah well, you'll have that. \nAnyway the door is probably too heavy for you\n to heavy to open by yourself,",
 			"but you'd probably be able to \nget through the cat door.",
 			"Thanks, I'll try that first.", 
 			"Come back to me if you have any problems ... \nand remember don't let the man see you."
@@ -816,6 +989,9 @@ Teddy.Levels.Level1.prototype._initDumptruck = function(){
 			"ZZZZZZZZZZZZZ --ZZZZZZZZZZZZ--",
 			"mumble ZZZ lay some of the mmZZotZZZ oil \non me  you little jaguar you..ZZZZ",
 			"Ok well I guess I'm on my own then.\n I guess I should explore the yard."
+		],
+		final : [
+			"ZZZZZZZZZZZZZZZ ....... ZZZZZZZZZZ"
 		]
 	};
 	
@@ -827,15 +1003,31 @@ Teddy.Levels.Level1.prototype._initDumptruck = function(){
 			if(dt.onConversation === 'first'){
 				dt.onConversation = 'refirst';
 			}
+			if(dt.onConversation === 'second'){
+				dt.onConversation = 'final';
+			}
 	});
 	 
 	dt.body.imovable = true;
 	dt.body.moves = false;
 	
-	
+
+	dt.mumble = game.add.text(dt.x-120,dt.y-140,'',{
+		font: "22px Arial",
+		fill: "#424242"
+	});
+//	dt.mumble.fixedToCamera = true;
 	dt._update = dt.update;
 	dt.update  = function(){
-		this._update();
+		this._update();	
+		var distToPlayer =game.physics.arcade.distanceBetween(this, this.game.adv.player);
+		if(distToPlayer < 300 && dt.onConversation === 'first'){
+			
+			this.mumble.setText("Hey You! The Teddy Bear Walking.\nCome Here. I'm the dumptruck.\nI want to talk to you. Come Here!");			
+		} else if(this.mumble){
+			this.mumble.setText('');
+			
+		}
 		game.physics.arcade.collide( this.game.adv.player, this);
 	}
 }

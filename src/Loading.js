@@ -1,11 +1,13 @@
 var Loading = function(){};
 Loading.prototype = {
 	preload : function(){
-		/*
-			Initiate the Preload
-			this.preloadBar = game.add.sprite(180, 300, 'preload');
-			game.load.setPreloadSprite(this.preloadBar, 0);
-		*/
+		
+		//Initiate the Preload
+		this.preloadBG = game.add.sprite(0,0,'loadingBG');
+		
+		this.preloadBar = game.add.sprite(100, 380, 'preload');
+		game.load.setPreloadSprite(this.preloadBar, 0);		
+		
 		game.load.audio('introMusic','assets/DeserveToBeLoved.ogg');
 		game.load.audio('gameMusic','assets/Surreptitious.mp3');
 		game.load.audio('cutsceneMusic','assets/Faith.ogg');
@@ -14,21 +16,20 @@ Loading.prototype = {
 		game.load.audio('glass','assets/glass.ogg');
 		game.load.audio('snip','assets/snip.ogg');
 		game.load.audio('whack','assets/whack.ogg');
-		game.load.audio('wood','assets/wood.ogg');
+		game.load.audio('wood','assets/wood.ogg');		
 		
-		game.load.image('title', 'assets/TitleScreen1.png');
 		game.load.image('intro', 'assets/introImage.png');
-		game.load.spritesheet('blink','assets/blink1.png', 106,68);
+		game.load.spritesheet('blink','assets/blink1.png', 106,68);		
 		
 		game.load.image('end1','assets/end1.png');
 		game.load.image('end2','assets/end2.png');
 		game.load.image('end3','assets/end3.png');
 		game.load.image('end4','assets/end4.png');
-
 		
-		game.load.tilemap('level1', 'assets/level1z.json', null, Phaser.Tilemap.TILED_JSON); // loading the tilemap 
-		game.load.image('testTiles', 'assets/testTiles_green1.png'); // loading the tileset image
-		game.load.image('testTiles2', 'assets/testTiles_green1.png'); // loading the tileset image
+		game.load.image('title', 'assets/TitleScreen1.png');
+		game.load.tilemap('level1', 'assets/level1ab.json', null, Phaser.Tilemap.TILED_JSON); // loading the tilemap 
+		game.load.image('testTiles', 'assets/testTiles_green2.png'); // loading the tileset image
+		game.load.image('testTiles2', 'assets/testTiles_green2.png'); // loading the tileset image
 		game.load.spritesheet('teddy','assets/teddy9.png',80,80);
 		game.load.image('treetop', 'assets/treetop1.png');
 		game.load.image('treebottom', 'assets/treebottom1.png');
@@ -51,8 +52,10 @@ Loading.prototype = {
 		game.load.image('screwdriver','assets/screwdriver.png');
 		game.load.image('crack', 'assets/crack.png');
 		game.load.image('dialogueBox', 'assets/dialogBox1.png');
-		game.load.image('vision', 'assets/vision.png');
+		game.load.image('vision', 'assets/vision1.png');
 		game.load.spritesheet('catdoor','assets/catdoor1.png',100,82);
+		game.load.image('rope', 'assets/rope.png');
+		game.load.image('nessy','assets/nessy1.png');
 		
 		game.load.image('greybg', 'assets/greybg.png');
 		game.load.image('menu', 'assets/menu.png');
