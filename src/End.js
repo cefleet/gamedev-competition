@@ -60,6 +60,17 @@ End.prototype = {
 		},this);
 		l.start();
 		s.start();
+		var addText = function(){
+			this.text = game.add.text(60, 60,'I was so close.\nBut right before I got to\nmy boys room the\nhousekeeper found me.' , {
+				font: "80px Georgia",
+				fill: "#ffffff"
+			});
+		}
+		var changeText = function(){
+			this.text.setText('She tossed me out here.\nWith the trash.');
+		}
+		game.time.events.add(Phaser.Timer.SECOND * 4, addText, this);
+		game.time.events.add(Phaser.Timer.SECOND * 8, changeText,this);
 	},
 	
 	forthSlide : function(){
@@ -73,11 +84,24 @@ End.prototype = {
 	},
 	
 	forthplusSlide : function(){
-		game.time.events.add(Phaser.Timer.SECOND * 5, this.fithSlide, this);
+		this.text.setText("");
+		game.time.events.add(Phaser.Timer.SECOND * 7, this.fithSlide, this);
+		var changeText = function(){
+			this.text.y = 460;
+			this.text.setText('This is the end for me.\nI will be alone forever.....');
+		}
+		var changeAgain = function(){
+			this.text.y = 180;
+			this.text.x = 110;
+			this.text.setText("Somebody's comming.\nI guess this is the end...\nUnless...Is it?\nIt is!");
+		}
+		game.time.events.add(Phaser.Timer.SECOND*1,changeText,this);
+		game.time.events.add(Phaser.Timer.SECOND*4,changeAgain, this);
 	},
 	
 	fithSlide : function(){
 		this.e3.destroy();
+		this.text.destroy();
 		var s = this.game.add.tween(this.spr_bg);
 		s.to({ alpha: 0 }, 2500, null);
 		s.onComplete.add(function(){

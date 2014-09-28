@@ -575,7 +575,7 @@ Teddy.Levels.Level1.prototype._initSwing = function(){
 			}
 		} else {
 			if(!this.cutDown){
-				this.game.adv.dialogueBox.show('The left rope looks a little frayed');
+				this.game.adv.dialogueBox.show('The left rope looks a little frayed.');
 			} 
 		}
 	});
@@ -886,7 +886,7 @@ Teddy.Levels.Level1.prototype._initNessy = function(){
 		first : [
 			"Well, well wha' do we have here!", 
 			"Who are you?", 
-			"The Name's Nessy.\n I'm a Scottish Urban Legand.\n If ya' don't believe meh just read ma birthmark.",
+			"The name's Nessy.\n I'm a Scottish Urban Legand.\n If ya' don't believe meh just read ma birthmark.",
 			"I'll just take your word for it.\n(He looks like a bath toy to me.)", 
 			"Suit yaself.\nSo whats'a pretty lass of bear \nlike you doing out here?", 
 			"I'm not a lass!\nI'm a boy!",
@@ -923,7 +923,7 @@ Teddy.Levels.Level1.prototype._initNessy = function(){
 	n.body.moves = false;
 	
 
-	n.mumble = game.add.text(n.x-120,n.y-140,'',{
+	n.mumble = game.add.text(n.x-90,n.y-130,'',{
 		font: "22px Arial",
 		fill: "#424242"
 	});
@@ -964,7 +964,7 @@ Teddy.Levels.Level1.prototype._initDumptruck = function(){
 			"What makes you think that?",
 			"Well I've seen enough cartoons \nto know this type of thing.",
 			"You watch a lot of TV to be an outside toy...",
-			"Yeah well, you'll have that. \nAnyway the door is probably too heavy for you\n to heavy to open by yourself,",
+			"Yeah well, you'll have that. \nAnyway the door is probably too heavy for you\nto open by yourself,",
 			"but you'd probably be able to \nget through the cat door.",
 			"Thanks, I'll try that first.", 
 			"Come back to me if you have any problems ... \nand remember don't let the man see you."
