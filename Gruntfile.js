@@ -11,7 +11,7 @@ module.exports = function(grunt){
 		dist : {
 			files : {
 				'dist/bear.js' : [
-					'src/lib/phaser/phaser.min.js',
+					'src/lib/phaser/build/phaser.min.js',
 					'src/lib/Adventurer/Adventurer.js',
 					'src/lib/Adventurer/Player.js',
 					'src/lib/Adventurer/Control.js',
